@@ -142,6 +142,7 @@ def main() -> int:
 
     relevant = [enrich(item) for item in items if is_quality(item) and is_relevant(item)]
     merged = merge_previous(relevant, previous)
+    merged = fill_missing_images(merged)
     data = build_payload(merged)
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -174,10 +175,12 @@ def fetch_rss(source: str, url: str) -> list[dict]:
     for item in root.findall(".//item"):
         title = text_of(item, "title")
         link = text_of(item, "link")
-        summary = clean_text(text_of(item, "description"))
+        raw_summary = text_of(item, "description")
+        summary = clean_text(raw_summary)
         date = parse_date(text_of(item, "pubDate") or text_of(item, "date"))
+        image = extract_rss_image(item, raw_summary, link)
         if title and link:
-            records.append(base_item(source, title, link, date, summary))
+            records.append(base_item(source, title, link, date, summary, image))
     return records
 
 
@@ -206,8 +209,8 @@ def fetch_google_news(source: str, query: str) -> list[dict]:
     return fetch_rss(source, url)
 
 
-def base_item(source: str, title: str, url: str, date: str, summary: str) -> dict:
-    return {
+def base_item(source: str, title: str, url: str, date: str, summary: str, image: str = "") -> dict:
+    item = {
         "id": stable_id(url or title),
         "title": clean_text(title),
         "source": source,
@@ -215,6 +218,30 @@ def base_item(source: str, title: str, url: str, date: str, summary: str) -> dic
         "url": normalize_google_url(url),
         "summary": summarize(summary or title),
     }
+    if image:
+        item["image"] = image
+    return item
+
+
+def extract_rss_image(item: ET.Element, raw_summary: str, link: str) -> str:
+    for node in item.iter():
+        tag = node.tag.lower()
+        if tag.endswith("thumbnail") or tag.endswith("content"):
+            url = node.attrib.get("url", "")
+            medium = node.attrib.get("medium", "")
+            content_type = node.attrib.get("type", "")
+            if url and ("image" in medium or "image" in content_type or tag.endswith("thumbnail")):
+                return urllib.parse.urljoin(link, url)
+        if tag.endswith("enclosure"):
+            url = node.attrib.get("url", "")
+            content_type = node.attrib.get("type", "")
+            if url and "image" in content_type:
+                return urllib.parse.urljoin(link, url)
+
+    match = re.search(r"<img[^>]+src=[\"']([^\"']+)[\"']", raw_summary or "", re.IGNORECASE)
+    if match:
+        return urllib.parse.urljoin(link, html.unescape(match.group(1)))
+    return ""
 
 
 def enrich(item: dict) -> dict:
@@ -285,6 +312,66 @@ def merge_previous(new_items: list[dict], previous: dict) -> list[dict]:
         seen.add(signature)
         merged.append(item)
     return merged
+
+
+def fill_missing_images(items: list[dict]) -> list[dict]:
+    checked = 0
+    for item in items:
+        if checked >= 32:
+            break
+        if item.get("image"):
+            continue
+        url = item.get("url", "")
+        if not should_fetch_page_image(item):
+            continue
+        checked += 1
+        image = fetch_page_image(url)
+        if image:
+            item["image"] = image
+        time.sleep(0.2)
+    return items
+
+
+def should_fetch_page_image(item: dict) -> bool:
+    url = item.get("url", "").lower()
+    source = item.get("source", "").lower()
+    if not url.startswith("http"):
+        return False
+    if "news.google.com" in url or "linkedin.com" in url:
+        return False
+    return any(token in url or token in source for token in ["edcity", "edb.gov.hk", "news.gov.hk", "hk01", "tvb"])
+
+
+def fetch_page_image(url: str) -> str:
+    try:
+        raw = fetch_url(url).decode("utf-8", errors="ignore")
+    except Exception:
+        return ""
+    image = extract_meta_image(raw) or extract_first_image(raw)
+    return urllib.parse.urljoin(url, image) if image else ""
+
+
+def extract_meta_image(raw: str) -> str:
+    patterns = [
+        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image["\']',
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, raw, re.IGNORECASE)
+        if match:
+            return html.unescape(match.group(1))
+    return ""
+
+
+def extract_first_image(raw: str) -> str:
+    for match in re.finditer(r"<img[^>]+src=[\"']([^\"']+)[\"']", raw or "", re.IGNORECASE):
+        src = html.unescape(match.group(1))
+        lowered = src.lower()
+        if not src.startswith("data:") and not any(token in lowered for token in ["logo", "icon", "sprite"]):
+            return src
+    return ""
 
 
 def is_relevant(item: dict) -> bool:
