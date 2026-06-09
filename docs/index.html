@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>香港 AI 教育资料站</title>
+    <meta name="description" content="香港 AI 教育新闻、教师培训、政策追踪和活动日历。" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="header-main">
+        <div>
+          <p class="eyebrow">Hong Kong AI Education Monitor</p>
+          <h1>香港 AI 教育资料站</h1>
+        </div>
+        <div class="status-panel" aria-label="更新状态">
+          <span id="updatedAt">准备读取资料</span>
+          <span id="itemCount">0 条记录</span>
+        </div>
+      </div>
+      <nav class="tabs" aria-label="主导航">
+        <button class="tab is-active" data-view="overview">今日重点</button>
+        <button class="tab" data-view="training">AI教师培训</button>
+        <button class="tab" data-view="news">香港AI教育每日新闻</button>
+        <button class="tab" data-view="summaries">网页新闻总结</button>
+        <button class="tab" data-view="policy">政策追踪</button>
+        <button class="tab" data-view="calendar">活动日历</button>
+        <button class="tab" data-view="discovery">Google / LinkedIn发现区</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="toolbar" aria-label="筛选">
+        <label class="search-box">
+          <span>搜索</span>
+          <input id="searchInput" type="search" placeholder="教师培训、AI素养、拨款、EdCity..." />
+        </label>
+        <label class="select-box">
+          <span>来源</span>
+          <select id="sourceFilter">
+            <option value="all">全部来源</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="metrics" aria-label="资料概览">
+        <article>
+          <strong id="trainingCount">0</strong>
+          <span>培训与活动</span>
+        </article>
+        <article>
+          <strong id="newsCount">0</strong>
+          <span>AI教育新闻</span>
+        </article>
+        <article>
+          <strong id="policyCount">0</strong>
+          <span>政策线索</span>
+        </article>
+        <article>
+          <strong id="discoveryCount">0</strong>
+          <span>发现结果</span>
+        </article>
+      </section>
+
+      <section id="view-overview" class="view is-visible">
+        <div class="section-heading">
+          <h2>今日重点</h2>
+          <p>按教师培训、新闻、政策和发现线索汇总。</p>
+        </div>
+        <div id="overviewGrid" class="dashboard-grid"></div>
+      </section>
+
+      <section id="view-training" class="view">
+        <div class="section-heading">
+          <h2>AI教师培训</h2>
+          <p>教师 AI 培训、工作坊、讲座和研讨会。</p>
+        </div>
+        <div id="trainingList" class="card-list"></div>
+      </section>
+
+      <section id="view-news" class="view">
+        <div class="section-heading">
+          <h2>香港AI教育每日新闻</h2>
+          <p>香港 AI 教育相关新闻的每日摘要。</p>
+        </div>
+        <div id="newsList" class="card-list"></div>
+      </section>
+
+      <section id="view-summaries" class="view">
+        <div class="section-heading">
+          <h2>网页新闻总结</h2>
+          <p>选择推荐网页，或输入一个网页链接建立摘要记录。</p>
+        </div>
+        <div class="summary-layout">
+          <form id="summaryForm" class="summary-form">
+            <label>
+              <span>网页链接</span>
+              <input id="urlInput" type="url" placeholder="https://..." />
+            </label>
+            <button type="submit">生成摘要模板</button>
+          </form>
+          <div id="summaryResult" class="summary-result"></div>
+        </div>
+        <h3 class="subhead">推荐网页</h3>
+        <div id="summaryList" class="card-list compact"></div>
+      </section>
+
+      <section id="view-policy" class="view">
+        <div class="section-heading">
+          <h2>政策追踪</h2>
+          <p>数字教育、AI拨款、教师培训政策和 AI 素养框架。</p>
+        </div>
+        <div id="policyTimeline" class="timeline"></div>
+      </section>
+
+      <section id="view-calendar" class="view">
+        <div class="section-heading">
+          <h2>活动日历</h2>
+          <p>培训、讲座、研讨会和报名截止日期。</p>
+        </div>
+        <div id="calendarList" class="calendar-list"></div>
+      </section>
+
+      <section id="view-discovery" class="view">
+        <div class="section-heading">
+          <h2>Google / LinkedIn发现区</h2>
+          <p>补充固定来源以外的公开线索；LinkedIn 只保留搜索发现链接。</p>
+        </div>
+        <div id="discoveryList" class="card-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>资料摘要只作研究整理用途，完整内容以原文链接为准。</span>
+      <a href="https://www.edb.gov.hk/tc/rss/index.html">EDB RSS</a>
+      <a href="https://www.news.gov.hk/tc/rss/index.lin.shtml">News.gov.hk RSS</a>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
