@@ -1,69 +1,84 @@
-# 香港 AI 教育资料站
+# JoJo's AIED Hub
 
-一个面向教师 AI 研究的静态资料站，聚合香港 AI 教育新闻、教师培训、政策追踪、活动日历，以及 Google / LinkedIn 公开线索发现区。
+一个面向教师 AI 研究的香港 AI 教育资料墙。
+
+这个网站用来每天整理：
+
+- 标注发布日期的香港 AI 教育相关新闻
+- 教师 AI 培训、讲座、工作坊和报名链接
+- AI 教育相关网页的研究摘要
+
+第一版界面采用 Padlet 风格：像资料墙一样浏览新闻、培训和摘要卡片，方便快速发现可追踪的活动、政策变化和潜在研究现场。
 
 ## 本地预览
 
+在终端运行：
+
 ```bash
-python3 -m http.server 4173 -d docs
+cd /Users/zhouxinxin/Documents/Codex/2026-06-09/ai-github
+python3 -m http.server 4174 -d docs
 ```
 
-然后打开 `http://localhost:4173`。
+然后打开：
 
-## 更新数据
+```text
+http://localhost:4174
+```
+
+如果要停止本地预览，在终端按：
+
+```text
+Control + C
+```
+
+## 每天更新资料
+
+运行：
 
 ```bash
 python3 scripts/update_data.py
 ```
 
-脚本会抓取教育局 RSS、News.gov.hk RSS、EdCity 页面和 Google News RSS 查询结果，并写入 `docs/data/content.json`。
+脚本会整理香港教育局、香港教育城、News.gov.hk、Google News 等公开来源，并写入：
 
-LinkedIn 不会被直接抓取；脚本只通过 Google News 搜索公开线索并保留原始链接。
-
-## 在 Codex 修改后同步到 GitHub
-
-### 方式一：先拉新、改、提交、推送（手工流程）
-
-```bash
-cd /Users/zhouxinxin/Documents/Codex/2026-06-09/ai-github
-git pull --rebase origin main
-git add .
-git commit -m "update content"
-git push origin main
+```text
+docs/data/content.json
 ```
 
-先 `pull` 后改再推送，可以避免和 GitHub Action 自动更新同一文件时出现冲突。
+LinkedIn 不直接抓取，只通过 Google 发现公开线索。
 
-### 方式二：一键同步（推荐）
+## Codex 改完后同步到 GitHub
 
-```bash
-./scripts/sync.sh
-```
-
-默认会执行：
-1. `git pull --rebase origin main`
-2. `git add .`
-3. 生成带时间的 commit message（如 `chore: sync from codex 2026-06-09 14:30`）
-4. `git push origin main`
-
-> 建议把该脚本放在每次改完页面/数据后的最后一步：先更新 `docs/data/content.json`，再运行同步脚本。
-
-### 连接方式（首次）
-
-如果你用 SSH：`git@github.com:你的用户名/仓库名.git`  
-如果你用 HTTPS：`https://github.com/你的用户名/仓库名.git`
-
-首次提交前执行：
+运行：
 
 ```bash
-git init
-git remote add origin git@github.com:你的用户名/仓库名.git  # 或 HTTPS
-git branch -M main
-git push -u origin main
+./scripts/sync.sh main "update JoJo AIED Hub"
 ```
 
-## 部署建议
+这会把 Codex 里的最新版本同步到 GitHub。
 
-- GitHub Pages：将 Pages 来源设置为 `main` 分支的 `/docs` 文件夹。
-- 阿里云：第一版建议使用中国香港 OSS 静态网站托管，或中国香港 ECS + Nginx。
-- 域名：不是第一步必须购买。网站确认后再绑定自定义域名更稳。
+## 网站文件
+
+- `docs/index.html`：网页结构
+- `docs/styles.css`：Padlet 风格界面
+- `docs/app.js`：新闻、培训、摘要卡片显示逻辑
+- `docs/data/content.json`：每日更新后的资料
+- `scripts/update_data.py`：自动抓取和整理资料
+- `scripts/sync.sh`：同步到 GitHub
+
+## GitHub Pages
+
+如果要让它变成公开网址，在 GitHub 仓库中进入：
+
+```text
+Settings -> Pages
+```
+
+选择：
+
+```text
+Branch: main
+Folder: /docs
+```
+
+保存后，网站会发布到 GitHub Pages。
