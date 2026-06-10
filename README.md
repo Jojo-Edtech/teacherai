@@ -1,4 +1,4 @@
-# JoJo's AIED Hub
+# Jojo Teacher AI Hub
 
 一个面向教师 AI 研究的香港 AI 教育资料墙。
 
@@ -72,7 +72,7 @@ LinkedIn 不直接抓取，只通过 Google 发现公开线索。
 运行：
 
 ```bash
-./scripts/sync.sh main "update JoJo AIED Hub"
+./scripts/sync.sh main "update Jojo Teacher AI Hub"
 ```
 
 这会把 Codex 里的最新版本同步到 GitHub。
