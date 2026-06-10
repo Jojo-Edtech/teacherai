@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>JoJo's AIED Hub</title>
-    <meta name="description" content="香港 AI 教育新闻、教师 AI 培训报名链接和网页新闻总结。" />
+    <meta name="description" content="香港 AI 教育新闻、AI 培训讲座、LinkedIn 线索和教育类顶刊文章追踪。" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -21,22 +21,29 @@
         <div>
           <p class="eyebrow">Hong Kong AI Education Watchboard</p>
           <h1>JoJo's AIED Hub</h1>
-          <p class="hero-intro">一个给教师 AI 研究使用的香港资料墙：看新闻发布日期，找教师培训报名入口，也把网页整理成可用的研究摘要。</p>
+          <p class="hero-intro">给教师 AI 研究使用的香港资料墙：新闻摘要、AI 培训讲座、LinkedIn 公开线索，以及教育类 SSCI 顶刊文章分开追踪。</p>
         </div>
         <div class="hero-stickers" aria-hidden="true">
-          <span class="sticker sticker-yellow">AIED</span>
-          <span class="sticker sticker-blue">HK News</span>
-          <span class="sticker sticker-pink">Teacher AI</span>
-          <span class="sticker sticker-green">Web Summary</span>
+          <span class="sticker sticker-yellow">News</span>
+          <span class="sticker sticker-blue">AI Events</span>
+          <span class="sticker sticker-pink">LinkedIn</span>
+          <span class="sticker sticker-green">SSCI Papers</span>
         </div>
       </div>
     </header>
 
     <main>
+      <nav class="tabs" aria-label="功能选项卡">
+        <button class="tab-button" type="button" data-page="news">新闻与网页摘要 <span id="newsCount">0</span></button>
+        <button class="tab-button" type="button" data-page="training">AI培训与讲座 <span id="trainingCount">0</span></button>
+        <button class="tab-button" type="button" data-page="linkedin">LinkedIn线索 <span id="linkedinCount">0</span></button>
+        <button class="tab-button" type="button" data-page="journals">SSCI顶刊文章 <span id="journalCount">0</span></button>
+      </nav>
+
       <section class="toolbar" aria-label="筛选">
         <label class="search-box">
           <span>搜索</span>
-          <input id="searchInput" type="search" placeholder="AI教育、教师培训、EdCity、报名..." />
+          <input id="searchInput" type="search" placeholder="AI教育、教师培训、EdCity、LinkedIn、journal..." />
         </label>
         <label class="select-box">
           <span>来源</span>
@@ -46,45 +53,53 @@
         </label>
       </section>
 
-      <section class="wall" aria-label="AI 教育资料墙">
-        <section class="wall-column news-column">
-          <div class="column-heading">
-            <span>1</span>
-            <div>
-              <h2>香港AI教育新闻</h2>
-              <p>按发布日期排列，保留原文链接。</p>
-            </div>
+      <section class="page is-active" id="page-news" data-page-panel="news" aria-label="香港AI教育新闻与网页摘要">
+        <div class="page-heading">
+          <span>1</span>
+          <div>
+            <h2>香港AI教育新闻与网页摘要</h2>
+            <p>按发布日期排列；点卡片即可生成研究摘要，也可以贴入网页链接做手动记录。</p>
           </div>
-          <div id="newsList" class="padlet-list"></div>
-        </section>
+        </div>
+        <form id="summaryForm" class="summary-form">
+          <input id="urlInput" type="url" placeholder="也可以贴一个网页链接 https://..." />
+          <button type="submit">建立摘要</button>
+        </form>
+        <div id="summaryResult" class="summary-result"></div>
+        <div id="newsList" class="padlet-grid"></div>
+      </section>
 
-        <section class="wall-column training-column">
-          <div class="column-heading">
-            <span>2</span>
-            <div>
-              <h2>教师AI培训报名</h2>
-              <p>工作坊、讲座、研讨会和报名入口。</p>
-            </div>
+      <section class="page" id="page-training" data-page-panel="training" aria-label="AI培训与讲座">
+        <div class="page-heading">
+          <span>2</span>
+          <div>
+            <h2>AI培训与讲座</h2>
+            <p>不只限教师培训；港大、港中文、教大等公开页面里与 AI 相关的讲座、研讨会、工作坊也会收录。</p>
           </div>
-          <div id="trainingList" class="padlet-list"></div>
-        </section>
+        </div>
+        <div id="trainingList" class="padlet-grid"></div>
+      </section>
 
-        <section class="wall-column summary-column">
-          <div class="column-heading">
-            <span>3</span>
-            <div>
-              <h2>网页新闻总结</h2>
-              <p>点新闻生成摘要，也可以手动输入网页。</p>
-            </div>
+      <section class="page" id="page-linkedin" data-page-panel="linkedin" aria-label="LinkedIn公开线索">
+        <div class="page-heading">
+          <span>3</span>
+          <div>
+            <h2>LinkedIn公开线索</h2>
+            <p>不直接爬 LinkedIn；这里只放 Google 可发现的公开线索和搜索入口，适合人工点开核对。</p>
           </div>
-          <form id="summaryForm" class="summary-form">
-            <input id="urlInput" type="url" placeholder="贴一个网页链接 https://..." />
-            <button type="submit">建立摘要</button>
-          </form>
-          <div id="summaryResult" class="summary-result"></div>
-          <h3 class="mini-heading">推荐总结</h3>
-          <div id="summaryList" class="padlet-list summary-list"></div>
-        </section>
+        </div>
+        <div id="linkedinList" class="padlet-grid"></div>
+      </section>
+
+      <section class="page" id="page-journals" data-page-panel="journals" aria-label="SSCI教育顶刊文章">
+        <div class="page-heading">
+          <span>4</span>
+          <div>
+            <h2>SSCI教育顶刊文章</h2>
+            <p>每天从 Crossref 公开资料追踪 Computers &amp; Education、Teaching and Teacher Education、BJET 等期刊的最新文章。</p>
+          </div>
+        </div>
+        <div id="journalList" class="padlet-grid journal-grid"></div>
       </section>
     </main>
 
@@ -92,6 +107,7 @@
       <span>资料摘要只作研究整理用途，完整内容以原文链接为准。</span>
       <a href="https://www.edb.gov.hk/tc/rss/index.html">EDB RSS</a>
       <a href="https://www.news.gov.hk/tc/rss/index.lin.shtml">News.gov.hk RSS</a>
+      <a href="https://api.crossref.org/">Crossref API</a>
     </footer>
 
     <script src="./app.js" type="module"></script>

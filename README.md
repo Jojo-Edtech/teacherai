@@ -4,11 +4,12 @@
 
 这个网站用来每天整理：
 
-- 标注发布日期的香港 AI 教育相关新闻
-- 教师 AI 培训、讲座、工作坊和报名链接
-- AI 教育相关网页的研究摘要
+- 香港 AI 教育相关新闻与网页摘要（标注发布日期）
+- AI 相关培训、讲座、工作坊、研讨会和报名链接（优先标注活动日期/报名截止）
+- LinkedIn 公开线索入口
+- 教育类 SSCI 顶刊最新文章
 
-第一版界面采用 Padlet 风格：像资料墙一样浏览新闻、培训和摘要卡片，方便快速发现可追踪的活动、政策变化和潜在研究现场。
+界面采用 Padlet 风格，并拆成四个顶部选项卡：新闻与网页摘要、AI培训与讲座、LinkedIn线索、SSCI顶刊文章。这样之后可以继续增加新功能。
 
 ## 本地预览
 
@@ -16,13 +17,13 @@
 
 ```bash
 cd /Users/zhouxinxin/Documents/Codex/2026-06-09/ai-github
-python3 -m http.server 4174 -d docs
+python3 -m http.server 4177 --bind 127.0.0.1 -d docs
 ```
 
 然后打开：
 
 ```text
-http://localhost:4174
+http://127.0.0.1:4177
 ```
 
 如果要停止本地预览，在终端按：
@@ -39,13 +40,32 @@ Control + C
 python3 scripts/update_data.py
 ```
 
-脚本会整理香港教育局、香港教育城、News.gov.hk、Google News 等公开来源，并写入：
+脚本会整理香港教育局、香港教育城、News.gov.hk、Google News、LinkedIn 公开线索入口、教育类顶刊 Crossref 资料，以及更多大学公开来源，并写入：
 
 ```text
 docs/data/content.json
 ```
 
+目前已加入的大学/教育技术相关来源包括：
+
+- 港大教育学院、HKU CITE、HKU INSTEP、HKU ALiTE
+- 港中文教育学院、CUHK CRI、CUHK CLST、CUHK CLEAR
+- 香港教育大学 Events、Learning and Teaching、AEDI、AAPSEF
+- 其他大学教学发展/教育科技网页会通过 Google News 线索补充发现
+
+AI培训与讲座区会优先使用活动日期、报名截止日期或课程周期，避免把“网页更新时间”误当成“培训时间”。
+
 LinkedIn 不直接抓取，只通过 Google 发现公开线索。
+
+顶刊文章区使用 Crossref 公开 API，目前追踪：
+
+- Computers & Education
+- Teaching and Teacher Education
+- British Journal of Educational Technology
+- Educational Technology Research and Development
+- Internet and Higher Education
+- Learning and Instruction
+- Journal of Computer Assisted Learning
 
 ## Codex 改完后同步到 GitHub
 
@@ -61,7 +81,7 @@ LinkedIn 不直接抓取，只通过 Google 发现公开线索。
 
 - `docs/index.html`：网页结构
 - `docs/styles.css`：Padlet 风格界面
-- `docs/app.js`：新闻、培训、摘要卡片显示逻辑
+- `docs/app.js`：选项卡、新闻、培训讲座、LinkedIn、顶刊文章显示逻辑
 - `docs/data/content.json`：每日更新后的资料
 - `scripts/update_data.py`：自动抓取和整理资料
 - `scripts/sync.sh`：同步到 GitHub
