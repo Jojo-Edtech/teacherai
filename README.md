@@ -97,8 +97,7 @@ Settings -> Pages
 选择：
 
 ```text
-Branch: main
-Folder: /docs
+Source: GitHub Actions
 ```
 
-保存后，网站会发布到 GitHub Pages。
+保存后，仓库里的 `Deploy GitHub Pages` workflow 会把 `docs` 文件夹发布到 GitHub Pages。
