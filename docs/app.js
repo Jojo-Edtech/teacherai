@@ -104,8 +104,7 @@ function render() {
   renderCardList(els.journalList, filtered.journals.slice(0, 80), "journal");
 
   if (!els.summaryResult.dataset.ready) {
-    const first = filtered.news[0] || filtered.training[0] || filtered.journals[0];
-    if (first) renderSummary(first);
+    renderSummaryPlaceholder();
   }
 }
 
@@ -130,30 +129,22 @@ function renderCardList(container, items, mode) {
 }
 
 function renderCard(item, mode, index) {
-  const tilt = ["tilt-left", "tilt-right", "tilt-none"][index % 3];
   const actionUrl = mode === "training" ? (item.registerUrl || item.url) : item.url;
-  const image = item.image ? `
-    <img class="card-image" src="${escapeAttr(item.image)}" alt="${escapeAttr(item.title)}" loading="lazy" />
-  ` : `
-    <div class="card-image image-fallback ${sourceClass(item)}">
-      <span>${escapeHtml(shortSource(item.source))}</span>
-    </div>
-  `;
   const canSummarize = ["news", "linkedin", "journal"].includes(mode);
+  const tags = (item.tags || []).slice(0, 4);
 
   return `
-    <article class="padlet-card ${tilt}">
-      ${image}
+    <article class="padlet-card resource-card">
       <div class="card-body">
         <div class="card-topline">
           <span class="date-pill">${escapeHtml(dateLabel(item, mode))}</span>
-          <span>${escapeHtml(item.source)}</span>
+          <span class="source-label">${escapeHtml(item.source || "未标注来源")}</span>
         </div>
         <h3>${escapeHtml(cleanTitle(item.title))}</h3>
         <p>${escapeHtml(item.summary)}</p>
         ${mode === "training" ? renderTrainingDetails(item) : ""}
         ${mode === "journal" ? renderJournalDetails(item) : ""}
-        <div class="tags">${(item.tags || []).slice(0, 5).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
+        ${tags.length ? `<div class="tags">${tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
         <div class="card-actions">
           <a href="${escapeAttr(actionUrl)}" target="_blank" rel="noopener">${actionLabel(item, mode)}</a>
           ${canSummarize ? `<button type="button" data-summary-id="${escapeAttr(item.id)}">生成总结</button>` : ""}
@@ -212,6 +203,14 @@ function renderSummary(item) {
   `;
 }
 
+function renderSummaryPlaceholder() {
+  els.summaryResult.dataset.ready = "placeholder";
+  els.summaryResult.innerHTML = `
+    <h3>网页摘要</h3>
+    <p>贴入一个网页链接，或在下面的资料卡片中点击“生成总结”，这里会显示一句话总结、重点内容和研究用途。</p>
+  `;
+}
+
 function renderManualSummary(url) {
   if (!url) return;
   const match = allItems().find((item) => item.url === url);
@@ -266,7 +265,61 @@ function allItems() {
 }
 
 function dedupeItems(items) {
-  return [...new Map(items.map((item) => [item.id, item])).values()];
+  const seen = new Set();
+  const deduped = [];
+
+  items.forEach((item) => {
+    const key = itemSignature(item);
+    if (seen.has(key)) return;
+    seen.add(key);
+    deduped.push(item);
+  });
+
+  return deduped;
+}
+
+function itemSignature(item) {
+  const doi = normalizeDoi(item.doi);
+  if (doi) return `doi:${doi}`;
+
+  const url = normalizeUrl(item.url);
+  if (url) return `url:${url}`;
+
+  const title = normalizeText(cleanTitle(item.title));
+  const source = normalizeText(item.source);
+  return `title:${title}|source:${source}`;
+}
+
+function normalizeUrl(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+
+  try {
+    const url = new URL(raw);
+    ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "fbclid", "gclid"].forEach((key) => {
+      url.searchParams.delete(key);
+    });
+    url.hash = "";
+    const pathname = url.pathname.replace(/\/+$/, "");
+    const search = url.searchParams.toString();
+    return `${url.hostname.toLowerCase()}${pathname.toLowerCase()}${search ? `?${search}` : ""}`;
+  } catch (error) {
+    return raw.split("#")[0].replace(/\?.*$/, "").replace(/\/+$/, "").toLowerCase();
+  }
+}
+
+function normalizeDoi(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/^https?:\/\/(dx\.)?doi\.org\//, "")
+    .replace(/^doi:\s*/, "");
+}
+
+function normalizeText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, "");
 }
 
 function sortByDateDesc(a, b) {
@@ -274,9 +327,27 @@ function sortByDateDesc(a, b) {
 }
 
 function sortByTrainingDate(a, b) {
-  const aDate = a.deadlineDate || a.eventDate || a.date || "";
-  const bDate = b.deadlineDate || b.eventDate || b.date || "";
-  return new Date(aDate || 0) - new Date(bDate || 0);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const aKey = trainingDateKey(a, today);
+  const bKey = trainingDateKey(b, today);
+
+  if (aKey.bucket !== bKey.bucket) return aKey.bucket - bKey.bucket;
+  return aKey.bucket === 1 ? bKey.time - aKey.time : aKey.time - bKey.time;
+}
+
+function trainingDateKey(item, today) {
+  const value = item.deadlineDate || item.eventDate || "";
+  const time = Date.parse(value);
+  if (Number.isNaN(time)) {
+    return { bucket: 1, time: Number.MAX_SAFE_INTEGER };
+  }
+  const date = new Date(time);
+  date.setHours(0, 0, 0, 0);
+  return {
+    bucket: date >= today ? 0 : 2,
+    time: date.getTime(),
+  };
 }
 
 function isLinkedInItem(item) {

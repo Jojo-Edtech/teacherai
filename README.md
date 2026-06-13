@@ -9,7 +9,12 @@
 - LinkedIn 公开线索入口
 - 教育类 SSCI 顶刊最新文章
 
-界面采用 Padlet 风格，并拆成四个顶部选项卡：新闻与网页摘要、AI培训与讲座、LinkedIn线索、SSCI顶刊文章。这样之后可以继续增加新功能。
+界面采用简洁资料库风格，并拆成四个顶部选项卡：新闻与网页摘要、AI培训与讲座、LinkedIn线索、SSCI顶刊文章。这样之后可以继续增加新功能。
+
+目前已经加入两层去重：
+
+- 自动更新脚本会按 URL、DOI 和标题合并重复资料。
+- 网页显示时会再做一次去重，避免同一条资料从不同来源重复出现。
 
 ## 本地预览
 
@@ -80,7 +85,7 @@ LinkedIn 不直接抓取，只通过 Google 发现公开线索。
 ## 网站文件
 
 - `docs/index.html`：网页结构
-- `docs/styles.css`：Padlet 风格界面
+- `docs/styles.css`：简洁资料库风格界面
 - `docs/app.js`：选项卡、新闻、培训讲座、LinkedIn、顶刊文章显示逻辑
 - `docs/data/content.json`：每日更新后的资料
 - `scripts/update_data.py`：自动抓取和整理资料

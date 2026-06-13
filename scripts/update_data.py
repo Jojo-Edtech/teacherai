@@ -64,6 +64,24 @@ EVENT_LISTING_SOURCES = {
     "EdUHK Events",
 }
 
+UNIVERSITY_EVENT_SOURCE_TOKENS = [
+    "hku education events",
+    "hku cite",
+    "cuhk faculty of education",
+    "cuhk cri",
+    "cuhk clst",
+    "cuhk clear",
+    "eduhk",
+    "aedi",
+    "aapsef",
+    "hkust",
+    "hku cetl",
+    "cityu",
+    "polyu",
+    "hkbu",
+    "lingnan",
+]
+
 CUHK_CARD_LISTING_SOURCES = {
     "CUHK Faculty of Education Events",
     "CUHK Faculty of Education ZH",
@@ -247,6 +265,18 @@ GENERIC_TITLES = {
     "youtube",
     "電郵",
     "电邮",
+    "about",
+    "contact",
+    "events",
+    "faculty",
+    "home",
+    "members",
+    "people",
+    "projects",
+    "publications",
+    "research",
+    "staff",
+    "team",
     "teacher training",
     "professional development",
     "training",
@@ -664,13 +694,14 @@ def format_authors(authors: list[dict]) -> str:
 
 
 def base_item(source: str, title: str, url: str, date: str, summary: str, image: str = "") -> dict:
+    normalized_url = normalize_google_url(url)
     item = {
-        "id": stable_id(url or title),
+        "id": stable_id(canonical_url(normalized_url) or title),
         "title": clean_text(title),
         "source": source,
         "date": date or today_iso(),
         "publishedDate": date or today_iso(),
-        "url": normalize_google_url(url),
+        "url": normalized_url,
         "summary": summarize(summary or title),
     }
     if image:
@@ -711,6 +742,8 @@ def enrich(item: dict) -> dict:
     elif is_training_candidate(item):
         category = "教师培训"
         tags.append("AI培训与讲座")
+        if not item.get("eventDate") and item.get("date") and is_university_event_source_name(item.get("source", "")):
+            item["eventDate"] = item.get("date", "")
     if any(keyword in text for keyword in POLICY_KEYWORDS):
         tags.append("政策")
     if any(keyword in text for keyword in EVENT_KEYWORDS):
@@ -744,13 +777,21 @@ def build_payload(items: list[dict]) -> dict:
     policies = sorted([item for item in items if item["category"] == "政策"], key=news_sort_key, reverse=True)
     linkedin = sorted([item for item in items if "LinkedIn" in item.get("tags", [])], key=news_sort_key, reverse=True)
     journals = sorted([item for item in items if item["category"] == "顶刊文章"], key=news_sort_key, reverse=True)
-    discoveries = sorted([item for item in items if item["category"] == "发现" or "Google发现" in item.get("tags", [])], key=news_sort_key, reverse=True)
+    discoveries = sorted(
+        [
+            item
+            for item in items
+            if item["category"] == "发现" and "LinkedIn" not in item.get("tags", [])
+        ],
+        key=news_sort_key,
+        reverse=True,
+    )
     return {
         "updatedAt": dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).isoformat(timespec="seconds"),
         "training": training[:60],
         "news": news[:80],
         "policies": policies[:60],
-        "events": training[:60],
+        "events": [],
         "discoveries": discoveries[:60],
         "linkedin": linkedin[:60],
         "journals": journals[:100],
@@ -769,7 +810,7 @@ def merge_previous(new_items: list[dict], previous: dict) -> list[dict]:
         if not is_quality(item) or not is_relevant(item):
             continue
         item = enrich(item)
-        signature = item.get("url") or normalize_title(item.get("title", ""))
+        signature = item_signature(item)
         if signature in seen:
             continue
         seen.add(signature)
@@ -928,23 +969,7 @@ def is_training_candidate(item: dict) -> bool:
         "hku alite",
         "cuhk clst teacher training",
     ])
-    is_university_event_source = any(token in source for token in [
-        "hku education events",
-        "hku cite",
-        "cuhk faculty of education",
-        "cuhk cri",
-        "cuhk clst",
-        "cuhk clear",
-        "eduhk",
-        "aedi",
-        "aapsef",
-        "hkust",
-        "hku cetl",
-        "cityu",
-        "polyu",
-        "hkbu",
-        "lingnan",
-    ])
+    is_university_event_source = is_university_event_source_name(source)
 
     if is_excluded_training_item(item):
         return False
@@ -956,11 +981,18 @@ def is_training_candidate(item: dict) -> bool:
         return True
     if has_registration and has_event and has_teacher_context:
         return True
+    if is_university_event_source and has_event and has_ai and (has_event_date or item.get("date") or item.get("publishedDate")):
+        return True
     if is_university_event_source and has_event and has_event_date and has_ai:
         return True
     if is_university_event_source and has_event and has_event_date and (has_registration or has_teacher_context):
         return True
     return False
+
+
+def is_university_event_source_name(source: str) -> bool:
+    lowered = (source or "").lower()
+    return any(token in lowered for token in UNIVERSITY_EVENT_SOURCE_TOKENS)
 
 
 def has_valid_registration(item: dict) -> bool:
@@ -982,9 +1014,11 @@ def news_sort_key(item: dict) -> str:
 
 
 def training_sort_key(item: dict) -> tuple[int, str]:
-    candidate = item.get("deadlineDate") or item.get("eventDate") or period_end_date(item.get("period", "")) or item.get("date") or ""
+    candidate = item.get("deadlineDate") or item.get("eventDate") or period_end_date(item.get("period", ""))
+    if not candidate:
+        return (1, "")
     today = today_iso()
-    return (0 if candidate >= today else 1, candidate)
+    return (0 if candidate >= today else 2, candidate)
 
 
 def is_relevant(item: dict) -> bool:
@@ -1247,6 +1281,56 @@ def extract_event_time(text: str) -> str:
 
 def normalize_google_url(url: str) -> str:
     return url.strip()
+
+
+def canonical_url(url: str) -> str:
+    raw = (url or "").strip()
+    if not raw:
+        return ""
+
+    parsed = urllib.parse.urlsplit(raw)
+    if not parsed.scheme or not parsed.netloc:
+        return raw.split("#", 1)[0].rstrip("/").lower()
+
+    query_pairs = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    filtered_query = [
+        (key, value)
+        for key, value in query_pairs
+        if key.lower()
+        not in {
+            "utm_source",
+            "utm_medium",
+            "utm_campaign",
+            "utm_term",
+            "utm_content",
+            "fbclid",
+            "gclid",
+        }
+    ]
+    query = urllib.parse.urlencode(filtered_query, doseq=True)
+    path = parsed.path.rstrip("/").lower()
+    return urllib.parse.urlunsplit(("", parsed.netloc.lower(), path, query, ""))
+
+
+def normalize_doi(doi: str) -> str:
+    value = (doi or "").strip().lower()
+    value = re.sub(r"^https?://(dx\.)?doi\.org/", "", value)
+    value = re.sub(r"^doi:\s*", "", value)
+    return value
+
+
+def item_signature(item: dict) -> str:
+    doi = normalize_doi(item.get("doi", ""))
+    if doi:
+        return f"doi:{doi}"
+
+    url = canonical_url(item.get("url", ""))
+    if url:
+        return f"url:{url}"
+
+    title = normalize_title(item.get("title", ""))
+    source = normalize_title(item.get("source", ""))
+    return f"title:{title}:source:{source}"
 
 
 def normalize_title(title: str) -> str:
