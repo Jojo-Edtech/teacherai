@@ -141,7 +141,7 @@ function renderCard(item, mode, index) {
           <span class="source-label">${escapeHtml(item.source || "未标注来源")}</span>
         </div>
         <h3>${escapeHtml(cleanTitle(item.title))}</h3>
-        <p>${escapeHtml(item.summary)}</p>
+        <p class="card-intro">${escapeHtml(cardIntro(item, mode))}</p>
         ${mode === "training" ? renderTrainingDetails(item) : ""}
         ${mode === "journal" ? renderJournalDetails(item) : ""}
         ${tags.length ? `<div class="tags">${tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
@@ -196,7 +196,7 @@ function renderSummary(item) {
   els.summaryResult.dataset.ready = "true";
   els.summaryResult.innerHTML = `
     <h3>${escapeHtml(cleanTitle(item.title))}</h3>
-    <p><strong>一句话总结：</strong>${escapeHtml(item.summary)}</p>
+    <p><strong>一句话总结：</strong>${escapeHtml(cardIntro(item, item.category))}</p>
     <p><strong>重点内容：</strong>${escapeHtml(item.researchValue || "这条资料可作为香港 AI 教育发展、教师培训、文献追踪或政策环境的研究线索。")}</p>
     <p><strong>和教师 AI 研究的关系：</strong>${escapeHtml(item.teacherResearchUse || "可用于追踪教师专业发展、AI素养培训、学校采纳教育科技的背景变化。")}</p>
     <a href="${escapeAttr(item.url)}" target="_blank" rel="noopener">查看原文链接</a>
@@ -244,10 +244,20 @@ function getCollections() {
 function filteredItems(items) {
   return items.filter((item) => {
     const sourceMatch = state.source === "all" || item.source === state.source;
-    const haystack = [item.title, item.summary, item.source, item.journal, item.authors, item.doi, ...(item.tags || [])].join(" ").toLowerCase();
+    const haystack = [item.title, item.cardIntro, item.summary, item.source, item.journal, item.authors, item.doi, ...(item.tags || [])].join(" ").toLowerCase();
     const searchMatch = !state.search || haystack.includes(state.search);
     return sourceMatch && searchMatch;
   });
+}
+
+function cardIntro(item, mode) {
+  if (item.cardIntro) return item.cardIntro;
+  const text = item.summary || cleanTitle(item.title) || "这条资料与 AI 教育相关。";
+  if (mode === "training" || item.category === "教师培训") return `这个培训/讲座主要关于：${text}`;
+  if (mode === "journal" || item.category === "顶刊文章") return `这篇文章主要研究：${text}`;
+  if (mode === "linkedin" || item.category === "发现") return `这条公开线索可能涉及：${text}`;
+  if (item.category === "政策") return `这条政策信息主要说明：${text}`;
+  return `这条新闻主要介绍：${text}`;
 }
 
 function allItems() {

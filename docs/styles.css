@@ -427,6 +427,15 @@ main {
   font-weight: 600;
 }
 
+.padlet-card .card-intro {
+  border-left: 3px solid var(--warm);
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: #fffaf0;
+  color: #3f4c4e;
+  line-height: 1.58;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;

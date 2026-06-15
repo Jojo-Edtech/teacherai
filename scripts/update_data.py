@@ -204,6 +204,53 @@ MONTHS = {
     "december": 12,
 }
 
+TRADITIONAL_PHRASES = {
+    "人工智能教育": "人工智能教育",
+    "生成式人工智能": "生成式人工智能",
+    "教師專業發展": "教师专业发展",
+    "教師培訓": "教师培训",
+    "教育科技": "教育科技",
+    "數字教育": "数字教育",
+    "學與教": "学与教",
+    "學習與教學": "学习与教学",
+    "學校領導": "学校领导",
+    "圓桌論壇": "圆桌论坛",
+    "研討會": "研讨会",
+    "工作坊": "工作坊",
+    "講座": "讲座",
+    "報名": "报名",
+    "截止": "截止",
+    "活動": "活动",
+    "課程": "课程",
+    "專業發展": "专业发展",
+    "發佈會": "发布会",
+    "發布會": "发布会",
+    "未來": "未来",
+    "賦能": "赋能",
+    "生態": "生态",
+    "應用方案": "应用方案",
+    "資訊素養": "资讯素养",
+}
+
+TRADITIONAL_CHARS = str.maketrans({
+    "與": "与", "學": "学", "習": "习", "會": "会", "師": "师", "訓": "训", "講": "讲",
+    "討": "讨", "專": "专", "業": "业", "發": "发", "佈": "布", "應": "应", "實": "实",
+    "踐": "践", "課": "课", "程": "程", "報": "报", "辦": "办", "聯": "联", "絡": "络",
+    "網": "网", "頁": "页", "資": "资", "訊": "讯", "數": "数", "據": "据", "庫": "库",
+    "錄": "录", "記": "记", "關": "关", "於": "于", "這": "这", "條": "条", "個": "个",
+    "為": "为", "將": "将", "讓": "让", "從": "从", "對": "对", "開": "开", "啟": "启",
+    "來": "来", "圓": "圆", "壇": "坛", "賦": "赋", "態": "态", "訪": "访", "強": "强", "調": "调", "說": "说", "明": "明", "題": "题", "點": "点", "線": "线",
+    "頂": "顶", "類": "类", "獻": "献", "證": "证", "據": "据", "體": "体", "驗": "验",
+    "識": "识", "認": "认", "議": "议", "論": "论", "圖": "图", "藍": "蓝", "撥": "拨",
+    "補": "补", "適": "适", "參": "参", "與": "与", "產": "产", "廣": "广", "觀": "观",
+    "務": "务", "習": "习", "場": "场", "導": "导", "構": "构", "機": "机", "組": "组",
+    "織": "织", "網": "网", "聲": "声", "響": "响", "處": "处", "現": "现", "況": "况",
+    "檢": "检", "視": "视", "選": "选", "擇": "择", "區": "区", "灣": "湾", "傳": "传",
+    "統": "统", "創": "创", "新": "新", "復": "复", "雜": "杂", "華": "华", "國": "国",
+    "際": "际", "標": "标", "籤": "签", "簡": "简", "介": "介", "預": "预", "測": "测",
+    "測": "测", "劃": "划", "計": "计", "劑": "剂", "劃": "划", "評": "评", "變": "变",
+})
+
 TRAINING_KEYWORDS = ["培訓", "培训", "工作坊", "研討會", "研讨会", "講座", "讲座", "論壇", "论坛", "課程", "课程", "專業發展", "报名", "報名", "seminar", "workshop", "webinar", "training", "course", "conference", "forum", "symposium"]
 REGISTRATION_KEYWORDS = ["報名", "报名", "登記", "登记", "截止", "register", "registration", "enrol", "enroll", "apply", "application"]
 TRUE_TRAINING_CONTEXT_KEYWORDS = ["教師專業發展", "教师专业发展", "teacher professional development", "teacher professional development courses", "professional development programmes for school teachers", "school teachers", "in-service", "instep", "cpd", "aied", "教師培訓", "教师培训", "teacher training"]
@@ -766,6 +813,7 @@ def enrich(item: dict) -> dict:
 
     item["category"] = category
     item["tags"] = sorted(set(tags))[:6]
+    item["cardIntro"] = card_intro(item)
     item["researchValue"] = research_value(item)
     item["teacherResearchUse"] = teacher_research_use(item)
     return item
@@ -1094,6 +1142,74 @@ def teacher_research_use(item: dict) -> str:
     if item["category"] == "政策":
         return "适合分析教师培训需求、学校执行压力和 AI 素养框架的形成。"
     return "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+
+
+def card_intro(item: dict) -> str:
+    core = intro_core(item)
+    category = item.get("category", "")
+
+    if category == "教师培训":
+        intro = f"这个培训/讲座主要关于：{core}"
+        if item.get("eventDate"):
+            intro += f" 活动日期是 {format_iso_date_simple(item['eventDate'])}，适合核对是否可报名或联系主办方。"
+        elif item.get("deadlineDate"):
+            intro += f" 报名截止是 {format_iso_date_simple(item['deadlineDate'])}，适合优先核对报名链接。"
+        else:
+            intro += " 建议点开原文核对活动日期、对象和报名方式。"
+        return summarize(intro, 170)
+
+    if category == "顶刊文章":
+        return summarize(f"这篇文章主要研究：{core} 可用于追踪教育技术、教师教育或 AI 教育相关的新文献。", 170)
+
+    if category == "政策":
+        return summarize(f"这条政策信息主要说明：{core} 可用于观察香港 AI 教育政策、学校执行和教师专业发展的变化。", 170)
+
+    if category == "发现":
+        return summarize(f"这条公开线索可能涉及：{core} 建议人工点开核对后，再决定是否纳入研究记录。", 170)
+
+    return summarize(f"这条新闻主要介绍：{core} 可用于了解香港 AI 教育、学校实践或教育科技发展的最新动态。", 170)
+
+
+def intro_core(item: dict) -> str:
+    title = to_simplified(clean_text(item.get("title", "")))
+    raw = item.get("abstract") or item.get("summary") or title
+    text = to_simplified(clean_text(raw))
+
+    if not text or normalize_title(text) == normalize_title(title):
+        text = title
+    elif title and text.lower().startswith(title.lower()):
+        text = clean_text(text[len(title):].strip(" ：:-—,，。"))
+        if not text:
+            text = title
+
+    text = remove_repeated_intro_text(text)
+    return summarize(text or title or "这条资料与 AI 教育相关", 125)
+
+
+def remove_repeated_intro_text(text: str) -> str:
+    words = text.split()
+    if len(words) >= 4 and words[: len(words) // 2] == words[len(words) // 2:]:
+        return " ".join(words[: len(words) // 2])
+    if len(text) >= 12:
+        half = len(text) // 2
+        if text[:half] == text[half:]:
+            return text[:half]
+    return text
+
+
+def to_simplified(value: str) -> str:
+    text = value or ""
+    for traditional, simplified in TRADITIONAL_PHRASES.items():
+        text = text.replace(traditional, simplified)
+    return text.translate(TRADITIONAL_CHARS)
+
+
+def format_iso_date_simple(value: str) -> str:
+    match = re.match(r"(\d{4})-(\d{2})-(\d{2})", value or "")
+    if not match:
+        return value
+    year, month, day = match.groups()
+    return f"{int(year)}年{int(month)}月{int(day)}日"
 
 
 def text_of(node: ET.Element, tag: str) -> str:
