@@ -1147,27 +1147,40 @@ def teacher_research_use(item: dict) -> str:
 def card_intro(item: dict) -> str:
     core = intro_core(item)
     category = item.get("category", "")
+    source = to_simplified(item.get("source", ""))
 
     if category == "教师培训":
-        intro = f"这个培训/讲座主要关于：{core}"
+        intro = f"这个培训/讲座主要关于：{core} 它来自 {source or '公开来源'}，可以帮助你判断香港学校、大学或教育机构正在关注哪些 AI 教学议题。"
         if item.get("eventDate"):
-            intro += f" 活动日期是 {format_iso_date_simple(item['eventDate'])}，适合核对是否可报名或联系主办方。"
+            intro += f" 活动日期是 {format_iso_date_simple(item['eventDate'])}，建议优先核对对象、地点、讲者、报名方式，以及是否适合作为教师 AI 研究的招募或观察现场。"
         elif item.get("deadlineDate"):
-            intro += f" 报名截止是 {format_iso_date_simple(item['deadlineDate'])}，适合优先核对报名链接。"
+            intro += f" 报名截止是 {format_iso_date_simple(item['deadlineDate'])}，建议尽快打开原文确认申请条件、参加对象和报名链接。"
         else:
-            intro += " 建议点开原文核对活动日期、对象和报名方式。"
-        return summarize(intro, 170)
+            intro += " 目前日期仍需核对，建议点开原文查看活动对象、活动形式和报名安排。"
+        return summarize(intro, 330)
 
     if category == "顶刊文章":
-        return summarize(f"这篇文章主要研究：{core} 可用于追踪教育技术、教师教育或 AI 教育相关的新文献。", 170)
+        return summarize(
+            f"这篇文章主要研究：{core} 它来自 {source or '教育类顶刊'}，可用于追踪教育技术、教师教育或 AI 教育相关的新文献。阅读时可以重点看研究问题、研究对象、方法设计、变量或量表，以及它是否能支持你的教师 AI 文献综述或研究设计。",
+            330,
+        )
 
     if category == "政策":
-        return summarize(f"这条政策信息主要说明：{core} 可用于观察香港 AI 教育政策、学校执行和教师专业发展的变化。", 170)
+        return summarize(
+            f"这条政策信息主要说明：{core} 它可以帮助你观察香港 AI 教育政策、学校执行、资源投入和教师专业发展之间的关系。建议关注政策提到的机构、对象、时间点和实施要求，之后可用于整理政策时间线。",
+            330,
+        )
 
     if category == "发现":
-        return summarize(f"这条公开线索可能涉及：{core} 建议人工点开核对后，再决定是否纳入研究记录。", 170)
+        return summarize(
+            f"这条公开线索可能涉及：{core} 它通常来自 Google 或 LinkedIn 可公开发现的结果，适合用来补充正式新闻和机构网页之外的活动、人物、项目或机构线索。建议人工点开核对来源可靠性，再决定是否纳入研究记录。",
+            330,
+        )
 
-    return summarize(f"这条新闻主要介绍：{core} 可用于了解香港 AI 教育、学校实践或教育科技发展的最新动态。", 170)
+    return summarize(
+        f"这条新闻主要介绍：{core} 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+        330,
+    )
 
 
 def intro_core(item: dict) -> str:
@@ -1183,7 +1196,7 @@ def intro_core(item: dict) -> str:
             text = title
 
     text = remove_repeated_intro_text(text)
-    return summarize(text or title or "这条资料与 AI 教育相关", 125)
+    return summarize(text or title or "这条资料与 AI 教育相关", 210)
 
 
 def remove_repeated_intro_text(text: str) -> str:
