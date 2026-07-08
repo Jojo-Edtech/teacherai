@@ -2,6 +2,12 @@
 
 一个面向教师 AI 研究的香港 AI 教育资料墙。
 
+公开网页：
+
+```text
+https://jojo-edtech.github.io/teacherai/
+```
+
 这个网站用来每天整理：
 
 - 香港 AI 教育相关新闻与网页摘要（标注发布日期）
@@ -107,3 +113,9 @@ Source: GitHub Actions
 ```
 
 保存后，仓库里的 `Deploy GitHub Pages` workflow 会把 `docs` 文件夹发布到 GitHub Pages。
+
+当前 GitHub 仓库：
+
+```text
+https://github.com/Jojo-Edtech/teacherai
+```
