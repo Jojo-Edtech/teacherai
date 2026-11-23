@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T09:56:57+08:00",
+  "updatedAt": "2026-11-23T10:17:21+08:00",
   "training": [
     {
       "id": "item-75c12d644e27",
@@ -808,6 +808,277 @@
       "deadlineDate": "2026-12-01"
     },
     {
+      "id": "item-802eeb899e62",
+      "title": "Our Ednovations",
+      "source": "CUHK CLST AI in Education",
+      "date": "2021-01-01",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/research/rd-2/",
+      "summary": "Our Ednovations",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：Our Ednovations 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "image": "http://clst.fed.cuhk.edu.hk/wp-content/uploads/2016/08/DSCF6198-1024x409.jpg",
+      "period": "2021-2022"
+    },
+    {
+      "id": "item-5e3ce5a060fc",
+      "title": "Funded Projects",
+      "source": "CUHK CLST AI in Education",
+      "date": "2025-01-01",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/research/funded-projects-2/",
+      "summary": "Funded Projects",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：Funded Projects 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "period": "2025-2027"
+    },
+    {
+      "id": "item-b040c055a08b",
+      "title": "STEM⁺ Lab",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/stem/",
+      "summary": "STEM⁺ Lab",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：STEM⁺ Lab 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "image": "https://clst.fed.cuhk.edu.hk/wp-content/uploads/2017/07/IMG_2134-copy-200x400.jpg"
+    },
+    {
+      "id": "item-d2273b9a9bf7",
+      "title": "Edputation Lab",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/edputators-3/",
+      "summary": "Edputation Lab",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：Edputation Lab 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "image": "http://clst.fed.cuhk.edu.hk/wp-content/uploads/2017/03/WhatsApp-Image-2017-03-04-at-5.32.54-PM-copy-e1522806026462.jpeg"
+    },
+    {
+      "id": "item-726e65917fa8",
+      "title": "Introduction",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/edputation-lab/",
+      "summary": "Introduction",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：Introduction 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "image": "https://clst.fed.cuhk.edu.hk/wp-content/uploads/2018/04/IMG_4967.jpg"
+    },
+    {
+      "id": "item-1578ab9491ef",
+      "title": "Edputators",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/edputators/",
+      "summary": "Edputators",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：Edputators 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "image": "http://clst.fed.cuhk.edu.hk/wp-content/uploads/2019/08/Tong-Lok-Tung-Jennifer_cropped2.jpeg"
+    },
+    {
+      "id": "item-37cbbebd0e97",
+      "title": "AI in Education",
+      "source": "CUHK CLST AI in Education",
+      "date": "2025-01-01",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/research/ai-in-education3/",
+      "summary": "AI in Education",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：AI in Education 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "image": "https://clst.fed.cuhk.edu.hk/wp-content/uploads/2025/09/6724faa9-218e-434d-92f1-5f26a88d6801.jpg",
+      "period": "2025-2027"
+    },
+    {
+      "id": "item-ee923366b36b",
+      "title": "JC Projects",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/jc-stem/",
+      "summary": "JC Projects",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：JC Projects 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+    },
+    {
+      "id": "item-61c937fd4fba",
+      "title": "JC-STEM",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://jc-cc-stem.hk/",
+      "summary": "JC-STEM",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：JC-STEM 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+    },
+    {
+      "id": "item-8d50ddf8be0f",
+      "title": "Network",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/network/",
+      "summary": "Network",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：Network 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "registerUrl": "http://www.aera.net/SIG022/ComputerandInternetApplicationsinEducSIG22"
+    },
+    {
+      "id": "item-5f32b40e6203",
+      "title": "Contact Us",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/contact-us/",
+      "summary": "Contact Us",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：Contact Us 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+    },
+    {
+      "id": "item-9397d34a9daa",
+      "title": "Newsletters",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/newsletters/",
+      "summary": "Newsletters",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：Newsletters 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "image": "http://clst.fed.cuhk.edu.hk/wp-content/uploads/2026/09/Screenshot-2026-09-08-at-10.07.48-AM.png"
+    },
+    {
+      "id": "item-035c2dda3c4d",
+      "title": "Programme Website",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://clst.fed.cuhk.edu.hk/aisci/",
+      "summary": "Programme Website",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：Programme Website 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "image": "https://clst.fed.cuhk.edu.hk/aisci/wp-content/uploads/2025/01/CLST_CU-no-text-1.png",
+      "registerUrl": "https://clst.fed.cuhk.edu.hk/aisci/#application"
+    },
+    {
+      "id": "item-498a6a3312a8",
+      "title": "The Chinese University of Hong Kong",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.cuhk.edu.hk/",
+      "summary": "The Chinese University of Hong Kong",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：The Chinese University of Hong Kong 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+    },
+    {
+      "id": "item-e5ddf10cc078",
+      "title": "Privacy Policy",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.cuhk.edu.hk/english/privacy.html",
+      "summary": "Privacy Policy",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：Privacy Policy 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "registerUrl": "http://www.res.cuhk.edu.hk/en-gb/"
+    },
+    {
+      "id": "item-688f9405cefb",
+      "title": "Disclaimer",
+      "source": "CUHK CLST AI in Education",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.cuhk.edu.hk/english/disclaimer.html",
+      "summary": "Disclaimer",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育"
+      ],
+      "cardIntro": "这条新闻主要介绍：Disclaimer 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
+      "registerUrl": "http://www.res.cuhk.edu.hk/en-gb/"
+    },
+    {
       "id": "item-b71a0450b772",
       "title": "於2026年9月1日開始",
       "source": "CUHK Faculty of Education Events",
@@ -826,275 +1097,157 @@
       "image": "https://www.fed.cuhk.edu.hk/cache/img/0c2ff6b55271736f4885980a114cc9e9.png"
     },
     {
-      "id": "item-802eeb899e62",
-      "title": "Our Ednovations",
-      "source": "CUHK CLST AI in Education",
-      "date": "2021-01-01",
-      "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/research/rd-2/",
-      "summary": "Our Ednovations",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育"
-      ],
-      "cardIntro": "这条新闻主要介绍：Our Ednovations 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "image": "http://clst.fed.cuhk.edu.hk/wp-content/uploads/2016/08/DSCF6198-1024x409.jpg",
-      "period": "2021-2022"
-    },
-    {
-      "id": "item-5e3ce5a060fc",
-      "title": "Funded Projects",
-      "source": "CUHK CLST AI in Education",
-      "date": "2025-01-01",
-      "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/research/funded-projects-2/",
-      "summary": "Funded Projects",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育"
-      ],
-      "cardIntro": "这条新闻主要介绍：Funded Projects 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "period": "2025-2027"
-    },
-    {
-      "id": "item-b040c055a08b",
-      "title": "STEM⁺ Lab",
-      "source": "CUHK CLST AI in Education",
+      "id": "item-f70c1c5f8c66",
+      "title": "應對AI高考作弊引混亂韓教育部長請辭- 國際 - 香港文匯報",
+      "source": "Google News",
       "date": "2026-11-22",
       "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/stem/",
-      "summary": "STEM⁺ Lab",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9naFpkLXE3RmFlTE9aRFZGYXJUeGQ2RnptenB0bGpSUkEwWmNvXzdGNHVEYlpnaWt5eDA3dkhlbTRkSnBnUG91OGFfOWF6UkZnQ1pPeE9La0lVdmhnaDhwcC1SR2ZIS2VJZk5Ka2VPZXVHdjVmWXl3?oc=5",
+      "summary": "應對AI高考作弊引混亂韓教育部長請辭- 國際 香港文匯報",
       "category": "每日新闻",
       "tags": [
-        "AI教育"
+        "AI教育",
+        "Google发现"
       ],
-      "cardIntro": "这条新闻主要介绍：STEM⁺ Lab 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "image": "https://clst.fed.cuhk.edu.hk/wp-content/uploads/2017/07/IMG_2134-copy-200x400.jpg"
-    },
-    {
-      "id": "item-d2273b9a9bf7",
-      "title": "Edputation Lab",
-      "source": "CUHK CLST AI in Education",
-      "date": "2026-11-22",
-      "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/edputators-3/",
-      "summary": "Edputation Lab",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育"
-      ],
-      "cardIntro": "这条新闻主要介绍：Edputation Lab 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "image": "http://clst.fed.cuhk.edu.hk/wp-content/uploads/2017/03/WhatsApp-Image-2017-03-04-at-5.32.54-PM-copy-e1522806026462.jpeg"
-    },
-    {
-      "id": "item-726e65917fa8",
-      "title": "Introduction",
-      "source": "CUHK CLST AI in Education",
-      "date": "2026-11-22",
-      "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/edputation-lab/",
-      "summary": "Introduction",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育"
-      ],
-      "cardIntro": "这条新闻主要介绍：Introduction 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "image": "https://clst.fed.cuhk.edu.hk/wp-content/uploads/2018/04/IMG_4967.jpg"
-    },
-    {
-      "id": "item-1578ab9491ef",
-      "title": "Edputators",
-      "source": "CUHK CLST AI in Education",
-      "date": "2026-11-22",
-      "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/edputators/",
-      "summary": "Edputators",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育"
-      ],
-      "cardIntro": "这条新闻主要介绍：Edputators 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "image": "http://clst.fed.cuhk.edu.hk/wp-content/uploads/2019/08/Tong-Lok-Tung-Jennifer_cropped2.jpeg"
-    },
-    {
-      "id": "item-37cbbebd0e97",
-      "title": "AI in Education",
-      "source": "CUHK CLST AI in Education",
-      "date": "2025-01-01",
-      "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/research/ai-in-education3/",
-      "summary": "AI in Education",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育"
-      ],
-      "cardIntro": "这条新闻主要介绍：AI in Education 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "image": "https://clst.fed.cuhk.edu.hk/wp-content/uploads/2025/09/6724faa9-218e-434d-92f1-5f26a88d6801.jpg",
-      "period": "2025-2027"
-    },
-    {
-      "id": "item-ee923366b36b",
-      "title": "JC Projects",
-      "source": "CUHK CLST AI in Education",
-      "date": "2026-11-22",
-      "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/jc-stem/",
-      "summary": "JC Projects",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育"
-      ],
-      "cardIntro": "这条新闻主要介绍：JC Projects 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "cardIntro": "这条新闻主要介绍：应对AI高考作弊引混亂韓教育部長請辭- 国际 - 香港文匯报 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
       "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
       "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     },
     {
-      "id": "item-61c937fd4fba",
-      "title": "JC-STEM",
-      "source": "CUHK CLST AI in Education",
+      "id": "item-f71334c12a8d",
+      "title": "韓國高考AI作弊風波發酵 教育部長官引咎辭職 - www.hkcna.hk",
+      "source": "Google News",
       "date": "2026-11-22",
       "publishedDate": "2026-11-22",
-      "url": "https://jc-cc-stem.hk/",
-      "summary": "JC-STEM",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0tNllWdERab3VPbzcxenZfdlZyaGF3dEY3WkQtWjdOS0pPY0tKVFNmbEs4MWsxQy11bFR2d0tfemRISUJnQ2poWDlodmxGMzE3NU5kWjhBM2czbGVudkJ4Y1hjMDVDQmVDS2t2VDV5OA?oc=5",
+      "summary": "韓國高考AI作弊風波發酵 教育部長官引咎辭職 www.hkcna.hk",
       "category": "每日新闻",
       "tags": [
-        "AI教育"
+        "AI教育",
+        "Google发现"
       ],
-      "cardIntro": "这条新闻主要介绍：JC-STEM 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "cardIntro": "这条新闻主要介绍：韓国高考AI作弊風波发酵 教育部長官引咎辭職 - www.hkcna.hk 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
       "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
       "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     },
     {
-      "id": "item-8d50ddf8be0f",
-      "title": "Network",
-      "source": "CUHK CLST AI in Education",
+      "id": "item-416663437d99",
+      "title": "浸大與阿里雲簽合作備忘推動AI及雲計算教育培育傳播人才- 財經 - 香港文匯報",
+      "source": "Google News",
       "date": "2026-11-22",
       "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/network/",
-      "summary": "Network",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9wSjk1ZG9GdC1TcUhoeXRYTi1JLW1HTmQtRDhzYWE3dnhZMHAxZ0tsZ0lwV2EwTTlNUS1rQjVtTTl3Wmg5XzlZZU1Cd1BtYlVnemhDZTc1aUkzaFFOTnBoXzQtZWVBSU9pSFM3NkdWZHQyYldQb01B?oc=5",
+      "summary": "浸大與阿里雲簽合作備忘推動AI及雲計算教育培育傳播人才- 財經 香港文匯報",
       "category": "每日新闻",
       "tags": [
-        "AI教育"
+        "AI教育",
+        "Google发现"
       ],
-      "cardIntro": "这条新闻主要介绍：Network 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "registerUrl": "http://www.aera.net/SIG022/ComputerandInternetApplicationsinEducSIG22"
-    },
-    {
-      "id": "item-5f32b40e6203",
-      "title": "Contact Us",
-      "source": "CUHK CLST AI in Education",
-      "date": "2026-11-22",
-      "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/contact-us/",
-      "summary": "Contact Us",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育"
-      ],
-      "cardIntro": "这条新闻主要介绍：Contact Us 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "cardIntro": "这条新闻主要介绍：浸大与阿里雲簽合作備忘推動AI及雲计算教育培育传播人才- 財經 - 香港文匯报 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
       "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
       "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     },
     {
-      "id": "item-9397d34a9daa",
-      "title": "Newsletters",
-      "source": "CUHK CLST AI in Education",
+      "id": "item-61d62b3ef3cf",
+      "title": "韓國高考AI作弊事件發酵教育部長引咎辭職- 國際 - 香港文匯報",
+      "source": "Google News",
       "date": "2026-11-22",
       "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/newsletters/",
-      "summary": "Newsletters",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1KcVE4aUJJQ1BjNWVBT0V4SXBNeXhaSlgxUjk0OEtaNEZSMExtNS15SzhEak1ZRUdPMlo3SEJUM29ORU1TYUVpalhPNWw3X0dibGNDUzlnb09MZ3B5RG9Ha2h3THNvMVcwbGYtUmVGMjdPMER3UjRr?oc=5",
+      "summary": "韓國高考AI作弊事件發酵教育部長引咎辭職- 國際 香港文匯報",
       "category": "每日新闻",
       "tags": [
-        "AI教育"
+        "AI教育",
+        "Google发现"
       ],
-      "cardIntro": "这条新闻主要介绍：Newsletters 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "image": "http://clst.fed.cuhk.edu.hk/wp-content/uploads/2026/09/Screenshot-2026-09-08-at-10.07.48-AM.png"
-    },
-    {
-      "id": "item-035c2dda3c4d",
-      "title": "Programme Website",
-      "source": "CUHK CLST AI in Education",
-      "date": "2026-11-22",
-      "publishedDate": "2026-11-22",
-      "url": "https://clst.fed.cuhk.edu.hk/aisci/",
-      "summary": "Programme Website",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育"
-      ],
-      "cardIntro": "这条新闻主要介绍：Programme Website 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "image": "https://clst.fed.cuhk.edu.hk/aisci/wp-content/uploads/2025/01/CLST_CU-no-text-1.png",
-      "registerUrl": "https://clst.fed.cuhk.edu.hk/aisci/#application"
-    },
-    {
-      "id": "item-498a6a3312a8",
-      "title": "The Chinese University of Hong Kong",
-      "source": "CUHK CLST AI in Education",
-      "date": "2026-11-22",
-      "publishedDate": "2026-11-22",
-      "url": "https://www.cuhk.edu.hk/",
-      "summary": "The Chinese University of Hong Kong",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育"
-      ],
-      "cardIntro": "这条新闻主要介绍：The Chinese University of Hong Kong 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "cardIntro": "这条新闻主要介绍：韓国高考AI作弊事件发酵教育部長引咎辭職- 国际 - 香港文匯报 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
       "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
       "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     },
     {
-      "id": "item-e5ddf10cc078",
-      "title": "Privacy Policy",
-      "source": "CUHK CLST AI in Education",
+      "id": "item-1e2fb134dc11",
+      "title": "韓國高考AI作弊爭議 教育部長承認失職下台李在明秒准 - 香港01",
+      "source": "Google News - 香港01",
       "date": "2026-11-22",
       "publishedDate": "2026-11-22",
-      "url": "https://www.cuhk.edu.hk/english/privacy.html",
-      "summary": "Privacy Policy",
+      "url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxPVk5TMDE4R0ltOXRJMnBFSFRZMVo0WERNcEFNVmh1S0N6ZC0xT0hSdlJkTTh6WWU4eFJGRkptVHVEbnpVeVBqRHg0SWlGZTN5WXVsOTR0YXpwdnFUWFdtbzJob3NSejkyaUg4VEpiQ09saFJtS3BESURmN3UwY1F6ODkxTUdwOXZXc1dmSG01dzU0bHRZUE5kR1U1TjlGZFJnRzBzcjFoX2N2c0NTMGxaUVZ2R3B1X2xvVGNkLXNDY05oZXJ3SEIwVE1mOFJ0eGxXVldYUk9DTDM3bnBRMEhMTVdQLWl3Z2JBME82N2tTbFdrSVktREVuSUE0ZzIwazF3ZExNRjhPMlkta3d5ck9nclhfWjg2V2s3NVo1R3BuUnJSR3VRbjViYUFfY2lmajdrVmdJWV82Y01CeW1rUTk2X2R1NktfZHZNdllUenRUREZPc3RXLVJrcXdLNVAwUDdwTjNuUkZzNzBBQzhuTVAtdk9TODBxRThrTUZnYUxrUGlKazJWUTdvNmVRdzh5QQ?oc=5",
+      "summary": "韓國高考AI作弊爭議 教育部長承認失職下台李在明秒准 香港01",
       "category": "每日新闻",
       "tags": [
-        "AI教育"
+        "AI教育",
+        "Google发现"
       ],
-      "cardIntro": "这条新闻主要介绍：Privacy Policy 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "cardIntro": "这条新闻主要介绍：韓国高考AI作弊爭议 教育部長承认失職下台李在明秒准 - 香港01 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
       "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "registerUrl": "http://www.res.cuhk.edu.hk/en-gb/"
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     },
     {
-      "id": "item-688f9405cefb",
-      "title": "Disclaimer",
-      "source": "CUHK CLST AI in Education",
+      "id": "item-5255c9549d65",
+      "title": "Google AI Pro教學 除Gemini外8大工具 覆蓋研究、剪片及寫Code - 香港01",
+      "source": "Google News - 香港01",
       "date": "2026-11-22",
       "publishedDate": "2026-11-22",
-      "url": "https://www.cuhk.edu.hk/english/disclaimer.html",
-      "summary": "Disclaimer",
+      "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPOGNpejZfM3NIZG10WDQ4STVTTmNtQVpKd2JyeFQ2cHVMVUdiaFBac19mR3FxZk44dVNTYWdrakZyY2JjSjByVGFVbXlLTVZNYU5BdnhNem1fMGFHZkI5bGVaZlNaemowV2dOdEFEVEdWWmFNMElydF9yVmJaVG1lSWJfVF8tTG5tZ1VxdnJVS21VaFluWnpzN3c5cVVrOW9ncXRmTnlkU01aSWE5QmdaSmt3aTFiZlM5WVNHOGFJcGhnLVpYZHVVT1NaQWVSc2hKVHJtSUdIMWFydXJvWjI2ZXNMQ0xmT0pYOHNrd3NvdktERnBJV0Ztc01xRUU3enRxM0NhSV84RW55SzJBTHctTHJVX2dtVjFUb3BjSW12eTV5dW5TQXduSW9rc1VWM2hQckE5VFRycEhKaENsMDBVOWR2TVBZT2YtdWE1RkVB?oc=5",
+      "summary": "Google AI Pro教學 除Gemini外8大工具 覆蓋研究、剪片及寫Code 香港01",
       "category": "每日新闻",
       "tags": [
-        "AI教育"
+        "AI教育",
+        "Google发现"
       ],
-      "cardIntro": "这条新闻主要介绍：Disclaimer 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "cardIntro": "这条新闻主要介绍：Google AI Pro教学 除Gemini外8大工具 覆蓋研究、剪片及寫Code - 香港01 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
       "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。",
-      "registerUrl": "http://www.res.cuhk.edu.hk/en-gb/"
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+    },
+    {
+      "id": "item-9335e8fcc1bb",
+      "title": "韓國高考共發現111宗涉智能設備作弊 教育部長就引起混亂請辭 - TVB",
+      "source": "Google News - TVB",
+      "date": "2026-11-22",
+      "publishedDate": "2026-11-22",
+      "url": "https://news.google.com/rss/articles/CBMigwNBVV95cUxPVkN4TnU1SEIwbi1KajFwcS05MllSNkZPQnRVUWJWclA1WEozY1VwcUNZQXJ4NjB4UWg3c2htVU9CaUNJRW1RakxYZkVDSExONWV3SS1DVGFSUHY3S1ZyZXhYc0J6aFB0QjNVemEtX0ltYVpKWDlLR05ORnZNT3hnb2JLT0laTUt4MXlFRi1CYW1JcERkWUZjRVhISzhlTHJoc3M2ZVlJU0pBMkNKa3RQbmRIRFlGeHduandSdUhLZE1OTWRHQk9Rb2luS1UyMEpHVDBPd1gzVXh0MFY1ZFI5MWdxNTQtMko0MFlYWkRBaFlZb3FGQ1A4V3JfUHZWTC1CdmhMMG1paTZzcW5OM05xZEZxanVYV044Nnlzb0ZQZm1aRUplSVNUQTI2WjZDREpTbTRlN2Z3QnJlcFpsQ2pmeU5jTG4tNzBZSjdjSmdIcXRUTGh0OWd6VEdRTjJGLUlOY3BkWm5NaC1vaDNsdHQwbEVXVFF2WVA4VGhzRnNrUkUzZlE?oc=5",
+      "summary": "韓國高考共發現111宗涉智能設備作弊 教育部長就引起混亂請辭 TVB",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育",
+        "Google发现"
+      ],
+      "cardIntro": "这条新闻主要介绍：韓国高考共发现111宗涉智能設備作弊 教育部長就引起混亂請辭 - TVB 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+    },
+    {
+      "id": "item-bd0fc4262926",
+      "title": "韓國高考共發現111宗涉智能設備作弊 教育部長請辭 - TVB",
+      "source": "Google News - TVB",
+      "date": "2026-11-22",
+      "publishedDate": "2026-11-22",
+      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQemZLRGMwSHF3R2U1ZmhnaS1vQVhnZGp1ZE9NUjljWk13V21iUFlQaUV2WGo1X2RQQVZ1TXdXRXF3SFBFWU5JT3FwNUtwYmpya0RIdnNIeWNjSTctMVU1Q0JlUmd5NEFtN0NoLWZJTVpVckdOOTh2MFpXRElETTJFcHBQVDlJelFocnpUUC1NWWswRUN1RXk4M1dfOFhlQmpucXgyYTRhem5hOGY5azE4OVBOZXZFSFhaZUtlRngtTVRlcnJSbmszVDVuWllPVW5XemQyWVBrVWJmLXRmTnY4S1FYd2lPQThpMG53eUtsSkxySGNCYlY2Qk84SUxhbUVLNkhua0Y3T1FRTm1nWGlieTRyUGUyTUZDQjZ2VEtWVUdUT1haN0pDRVRCdHplN0s5YTY1a2JGWkVPZnZoOEN5eUNMaHVobmc?oc=5",
+      "summary": "韓國高考共發現111宗涉智能設備作弊 教育部長請辭 TVB",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育",
+        "Google发现"
+      ],
+      "cardIntro": "这条新闻主要介绍：韓国高考共发现111宗涉智能設備作弊 教育部長請辭 - TVB 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+    },
+    {
+      "id": "item-f28d3a7fa6e8",
+      "title": "韓國高考共發現111宗涉智能設備作弊 教育部長請辭 - TVB",
+      "source": "Google News - TVB",
+      "date": "2026-11-22",
+      "publishedDate": "2026-11-22",
+      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNVXBQRGtwNkVZUTFSVkk3bDdxNW5Qdm9mcExaQThjM2NpWEJJY0hLUWJiSzV2VUZKc1ZuNkZoTUdYYmhsSXhTdUYzRjJtdDRKUXFEXzNqUm82UWlLSUQzQTNQS3NvTWtQdUxIakN0REQwNnFzVXZUSGFldHZXU0lHMVdDMjdGNnJEbjlvT0VBd0pyV3NCUkVOMXFMMXNtakotX1FCLW5YM3N6Yl9VcmNDbW16VVFLYXpIeDFqZzZoX3BSN0RTWVY5REplcEdkaDdJZUlJamFQa1dqeUFKRThoaXV4X1k1T2NaTHVsNWd0QmVyQm5XZzBKR1FvOUFPTEphNFJvS0JEekVyc3laSFVWckdZNURNZHpNTi1XLWs5QVBRSVZZUHRMcmFWSV9qZm5mRDhSNlhYNDFuejFpVTZxdGxmcUxwVzA?oc=5",
+      "summary": "韓國高考共發現111宗涉智能設備作弊 教育部長請辭 TVB",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育",
+        "Google发现"
+      ],
+      "cardIntro": "这条新闻主要介绍：韓国高考共发现111宗涉智能設備作弊 教育部長請辭 - TVB 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     },
     {
       "id": "item-570966463c9e",
@@ -1179,6 +1332,23 @@
         "Google发现"
       ],
       "cardIntro": "这条新闻主要介绍：柴湾信愛学校将停办 舊生用AI建3D模型留念 隨時「漫步」校園 - 香港01 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+    },
+    {
+      "id": "item-720fb5e99eda",
+      "title": "70載深耕辦學傳統！從普通話教學到AI時代教育新佈局｜方仲倫｜蘇浙公學 ｜校長Talk - AM730",
+      "source": "Google News",
+      "date": "2026-11-20",
+      "publishedDate": "2026-11-20",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1odXkzSExRMEM2eDlWM1dYM3JOSEhBcXV4SExHdVlWd2I2aU9BeU1HMmFpRUhxcDZvaHFPRllxUzdFV2pub1hJbk9EVjVvMjI1bElhTg?oc=5",
+      "summary": "70載深耕辦學傳統！從普通話教學到AI時代教育新佈局｜方仲倫｜蘇浙公學 ｜校長Talk AM730",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育",
+        "Google发现"
+      ],
+      "cardIntro": "这条新闻主要介绍：70載深耕办学传统！从普通話教学到AI時代教育新布局｜方仲倫｜蘇浙公学 ｜校長Talk - AM730 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
       "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
       "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     },
@@ -1648,6 +1818,23 @@
       "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     },
     {
+      "id": "item-77b395f72771",
+      "title": "AI發展與大學教育｜AI衝擊就業 大學課程應否強制實習？｜學習新體驗 - TVB",
+      "source": "Google News - TVB",
+      "date": "2026-11-08",
+      "publishedDate": "2026-11-08",
+      "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxQWGFMeWsxMlhuaVVDbFdsb3VBTnVLYTJYc01tU293aXh5RlNVNUN4UjJXSk1ueERkVllkVUJDT1VBcFhOeFh0Qm1lLWtJdnNmZ3BKb3hfOElxUUI4aEd3dGJDX3VTaW9jc3F3WElEc2t4UjFNSWVUeE1iWllqTlgtd2lhLW12VHNPZF90bDlZR1ZyX3E5cExCMHF5c0t2UUgtLU51bV9lWVZqbTVOUldkLURYX1Z4UEZkXzk0UTVKX0pSOUprOHFJUTZTU3FpZ3lpcXRUbDh2TkFNbl9pdFprMjBrcFlrR2VydnpBUC1TZkl0cDdJVHNlVmJZVG1tSm1nbVN0clJ1a1hDSlFadGRvZ19veV9Kb25KbTJtUTBZZ3hsUFM5N1dJZGpMaFpodHpvRU5NeE9kbGZGbXhQWTNMZHVVT0tkZ2Y0ZzBZMFE5MFBJV3JnNjdMazJ2dU9CYXoya01XZ1d5Uk1DYmdWSFYybFhiR2ZkTndfNWVNMUhITmxoYmg5?oc=5",
+      "summary": "AI發展與大學教育｜AI衝擊就業 大學課程應否強制實習？｜學習新體驗 TVB",
+      "category": "每日新闻",
+      "tags": [
+        "AI教育",
+        "Google发现"
+      ],
+      "cardIntro": "这条新闻主要介绍：AI发展与大学教育｜AI衝擊就业 大学课程应否强制实习？｜学习新体验 - TVB 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
+      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+    },
+    {
       "id": "item-66014db392a8",
       "title": "培英中學首創「腦科學人工智能研學中心」 夥企業引進前沿科技 推動數字教育 - 香港學校網",
       "source": "Google News",
@@ -1953,197 +2140,6 @@
         "Google发现"
       ],
       "cardIntro": "这条新闻主要介绍：嗇色園开展教育AI全方位平台 涵蓋轄下15校 - on.cc東网 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-591d7bb99409",
-      "title": "【校長講堂】科技賦能與價值堅守：從京蒙考察反思 AI 時代的全人教育 - 香港文匯報",
-      "source": "Google News",
-      "date": "2026-10-31",
-      "publishedDate": "2026-10-31",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBDOEtKZks3eFIzR0hCSTRiWmp6Z1M2SHJsSURhbjUyODlkTmI1SVB5cGdzUEZ4emRuRGFGRDNLZm1vQ09LSmdOZ0IyLXdXLTE1SDNzQm1sbDZjc0tESGRiVUh6X09Xa1J1S21Mb0l5UVprSWlqSjE0?oc=5",
-      "summary": "【校長講堂】科技賦能與價值堅守：從京蒙考察反思 AI 時代的全人教育 香港文匯報",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育",
-        "Google发现"
-      ],
-      "cardIntro": "这条新闻主要介绍：【校長讲堂】科技赋能与價值堅守：从京蒙考察反思 AI 時代的全人教育 - 香港文匯报 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-89d36adf90b2",
-      "title": "教大科大華東師大深化AI教育合作推動16項研究落地- 教育科研 - 香港文匯報",
-      "source": "Google News",
-      "date": "2026-10-30",
-      "publishedDate": "2026-10-30",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5zNXNPVktsVDNieV9JR2NEaVFha1g0akloTy1rSlB3SjZzeXgxY3ZUaXlkRGIzTngyeXJSbFplVkZxc2tmSGx6MmFYV0FDeENkdWgySi1EM3hMRUpoTkJKdjd3NkZHUGdIcVQzT1JrS3JDZW9PQk9j?oc=5",
-      "summary": "教大科大華東師大深化AI教育合作推動16項研究落地- 教育科研 香港文匯報",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育",
-        "Google发现"
-      ],
-      "cardIntro": "这条新闻主要介绍：教大科大华東师大深化AI教育合作推動16項研究落地- 教育科研 - 香港文匯报 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-a8216d0824f8",
-      "title": "聖方濟各大學與龍昌數碼科技簽署合作備忘錄攜手推動AI創科教育兼辦無人車挑戰賽- 文匯校園+ - 香港文匯報",
-      "source": "Google News",
-      "date": "2026-10-30",
-      "publishedDate": "2026-10-30",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE16M1gyYjVVREtYNFZ2RzVaNDZERXRVRXpiR0ZMSjcxZ3VGZ2pvM3cxV1F4VDYzUVVHYjNhby1ReDVaS2ZYaUV2UFlFVnduRVZVSlJmc05yTTY2OXZLdkJvbnFmTHZlLWNEeW5NVEJmTF9oeGI3ZEEw?oc=5",
-      "summary": "聖方濟各大學與龍昌數碼科技簽署合作備忘錄攜手推動AI創科教育兼辦無人車挑戰賽- 文匯校園+ 香港文匯報",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育",
-        "Google发现"
-      ],
-      "cardIntro": "这条新闻主要介绍：聖方濟各大学与龍昌数碼科技簽署合作備忘录攜手推動AI创科教育兼办無人車挑戰賽- 文匯校園+ - 香港文匯报 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-894afdfe18a6",
-      "title": "袁國勇講座勉勵中學生毋懼AI浪潮 強調人類創意無可替代 - 香港01",
-      "source": "Google News - 香港01",
-      "date": "2026-10-29",
-      "publishedDate": "2026-10-29",
-      "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxPNk0yLUhRWVJUVVpwR19lUHcxSkdaYkRubU9jVEZDSlc0ZUhQLTFFbGtweDJhYzNHQlU2Rnl5V3FpdDVxTVdWbEdVbDh5LXFqLWFRazZFbmo1OFQ2XzRscmN4SjlIQnJfTkw5akxwZVBjY2FWaFdhVnluaGJrQ0V6cHRxZzdQZUV5bDRrTVRxWDFKeGFUUUlHM1VNYThoZHFoVlV3bGpnd20xUmdfa2tKQTNnVldnV3laREJ3T3otX1J3OHExbVA4RlBSa3VxSXZwbXJsc3lQVnpXQkdlMUZORU81Ul93YXE4WUZmc3gxU1R2MGdQWXZBaGstNWw2djh5M3VwZDZwUmkxc1hJdVZZVmNsOUJlOVBGbkdPcDJfUTl6OGt4R1RpbF9KS0gwTk50OFhZVWstT0RTUTFlUl9FeWFyUWFNVmpyNnBHLXYyTEdRaXRiYXM5dzk5ZmhiNkpyWTJjc01IRURTQm53SU1wdFB5VEN0bU1rcnBLVUZ5LVlOTzB2U0VlQkgta0t1VVN5YWdqN2NEVnljamg1eVFNaUgzMTVZUQ?oc=5",
-      "summary": "袁國勇講座勉勵中學生毋懼AI浪潮 強調人類創意無可替代 香港01",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育",
-        "Google发现",
-        "活动"
-      ],
-      "cardIntro": "这条新闻主要介绍：袁国勇讲座勉勵中学生毋懼AI浪潮 强调人类创意無可替代 - 香港01 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-0d0c76bfe6d7",
-      "title": "教師持續專業發展研討會（10）：AI輔助備課—從教材製作到互動學習設計 - 香港教育城",
-      "source": "Google News - EdCity",
-      "date": "2026-10-29",
-      "publishedDate": "2026-10-29",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4yLXdNVFpSb3k4S3RpNkV5WlRMSG9wRXNFNDN4TTRENHFlbk93MjZzNURfVnB5eHJRQ3FkejJST0JaMVBSaGp3QTJXU1lOUQ?oc=5",
-      "summary": "教師持續專業發展研討會（10）：AI輔助備課—從教材製作到互動學習設計 香港教育城",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育",
-        "Google发现",
-        "活动"
-      ],
-      "cardIntro": "这条新闻主要介绍：教师持續专业发展研讨会（10）：AI輔助備课—从教材製作到互動学习設计 - 香港教育城 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-50a98f111534",
-      "title": "教大於全球大學校長及領袖高峰會 探討AI倫理治理 - 香港商报",
-      "source": "Google News",
-      "date": "2026-10-28",
-      "publishedDate": "2026-10-28",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE16NHNhUXZPX3ZqZFNuRDRWWTZKZXd2a3BXak0wc1JjQjlTRWF6MElDTEtjdUZYczM5UmRmVEhEeE52cXh0aTBOMnA2WXBXc2hFVDFiNkFCSDMwVXhEb1dhZVlCU1BaS1ppSVkzRzNHMDk3RTd0eGc?oc=5",
-      "summary": "教大於全球大學校長及領袖高峰會 探討AI倫理治理 香港商报",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育",
-        "Google发现",
-        "活动"
-      ],
-      "cardIntro": "这条新闻主要介绍：教大于全球大学校長及領袖高峰会 探讨AI倫理治理 - 香港商报 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-26b4e84628eb",
-      "title": "學生作業全靠AI？柏克萊教授放棄對錯評分 直言：已失去意義 - 香港01",
-      "source": "Google News - 香港01",
-      "date": "2026-10-28",
-      "publishedDate": "2026-10-28",
-      "url": "https://news.google.com/rss/articles/CBMinANBVV95cUxOc0psZ0FFMXJ0QjdSS1VNSGl6R0xhMnhmZG5mOThNUTJzMzdxaVp2VFM3OWNVXzhKOFcwT1AzVUNacjJvWi14Y18ycGc0clhtbG4tNXR6dGlIWk9aSWdpMzdCem5RNGZaeWpXOTJNM0Zsa2ZqOFl0bVdNbWtXMDRMa2lqdC1UYWI1U2l0bFBpZWRsTWhHWEFzN1lyeHF0Ym1kWEhnWndLUi0zdlVDWUwxMlJ3cWRJUEdMaHRabjZ4YnppQmpBeGd3OTZhZWYxdjNyQkI0QUw1TVlYbEpWd01fMzhpSjZoM2ZQNm51WVQtTnlIY21LdldacGZBSThKMlFzZkJXMFdzTzdZYUR4NVBmei01VVVXUnFPYmRqbXRkVnpWQzdLYWN1VG45azZUdWozWFdDMFRxMGE3ajY1R2VIaENwelNha1pYRmM5WTR0LUR4aHR0eFM1cXBPMzVkNVV3ZTJCcHFhV0dIWllES3VxY0oyRkVEWE1HNTFjZm9fcUM4ZjNmUmV5NWVZNE1hRGJ5SWJHbEoyeFhpbi1P?oc=5",
-      "summary": "學生作業全靠AI？柏克萊教授放棄對錯評分 直言：已失去意義 香港01",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育",
-        "Google发现"
-      ],
-      "cardIntro": "这条新闻主要介绍：学生作业全靠AI？柏克萊教授放棄对錯评分 直言：已失去意義 - 香港01 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-4d982d6466a0",
-      "title": "教大於全球大學校長及領袖高峰會 探討AI倫理治理 - 香港商报",
-      "source": "Google News",
-      "date": "2026-10-28",
-      "publishedDate": "2026-10-28",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBHNWtfMS13ZnVrbmxDMW45MmZKaTBKZ3gwM2IzRHpEV3RNOU5zR2FLZExIWlJ2bGdCTnhCa3M0UktBTl83S0E3S0ZBdDYxSG5JSmZMbks1dVZYNGhrdmJEMUo3aVJwYkQ2UnZLWnYyak4zWUdfcXNZTmN5cw?oc=5",
-      "summary": "教大於全球大學校長及領袖高峰會 探討AI倫理治理 香港商报",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育",
-        "Google发现",
-        "活动"
-      ],
-      "cardIntro": "这条新闻主要介绍：教大于全球大学校長及領袖高峰会 探讨AI倫理治理 - 香港商报 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-c9a4e3b58888",
-      "title": "當AI畫出孩子的想像：讓寫作從「有話想說」開始——香港教育大學講師林立堃博士 - 香港教育城",
-      "source": "Google News",
-      "date": "2026-10-28",
-      "publishedDate": "2026-10-28",
-      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxQOGdfNl9QejFCWS1uSDRuWjNIM0FFZHZxaEVKUDcxcFRJWjFmY2w5aFk3RVNTd2g1bldkbEpvZ184clo2Q01ONk9GSlNIazVtMmUtM0VIQVZwZXMzeEtyQzNNRkkxYndpVl9UQkxmX1FaRDdsOXdYUkxFY0pSU19sRk43RXk0akdLaHpvZDF5QUc2ekx2ZXBTdFQwc2Q3emdUNFFiMEpDS2Q5RjNRM19odHd0YUQ1WG5BRE80SkRkeVk2OGRrOHllZG5na2g3ODVqVTlEcHQ3b0RDWFYzT2ZLRWFFSWxmMUd3YjNDWEQ0NW1lMk16Z0c0bDl5TF81ZDFfNEZmVEc4RDFUWXVsc1ljWjMzTU9JV0ZqdzhUUFZiM21DUVZHeENRVlB6UklhcmVm?oc=5",
-      "summary": "當AI畫出孩子的想像：讓寫作從「有話想說」開始——香港教育大學講師林立堃博士 香港教育城",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育",
-        "Google发现"
-      ],
-      "cardIntro": "这条新闻主要介绍：當AI畫出孩子的想像：让寫作从「有話想说」开始——香港教育大学讲师林立堃博士 - 香港教育城 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-52fa34b88a95",
-      "title": "AI智能錄音品牌Plaud：金融教育界帶動本地用戶群增長近19倍 (17:28) - 20261027 - 即時財經新聞 - 明報財經網",
-      "source": "Google News",
-      "date": "2026-10-27",
-      "publishedDate": "2026-10-27",
-      "url": "https://news.google.com/rss/articles/CBMiiANBVV95cUxONlVabjlIaVlQZUtsSWJJZmlpYUlvQ3N4ZDhGdE5wcGtyYXJWVDdGWXdraGtKcnVmUjZGSjRvMEFyVUlhS0hrRDVVRHhGNUk2Z2R4a1A2TEpqa3pselBRbzcyRjJUMWJwWXAtR1E4bUxCMkJHb0lSM2YzN2ktUUlVOG9CTlAzbi1zUUY3RmpYZy1jU0xHTlF0Vlh5RnVYaFNjWXRNSVNMSkhtMl9Fc1REcFBFc3dSN0I0VjdCWERfQ3FKY2VzYmJSWm10dkRIb2hCV0xGZHBOVHp1RUE5SXFPdUxvbjFjcFZtVXcyMmQwWmFKbTY2ZjF5T1VOVmxIY05xaFVRNjJXWXVuWDJ3ckNkZ0NnTENTZ2JZRllfM0RnU054Z2ZwX2phWlc5Qjk4ZVhoeUJLN3VOZVBwdDFBdDVIM0xLcjZPVEpOZTJ0NzlBZEZFMDF2dHNsbmZ6MkRDTmZ2eGZMci1Ib3Zma2pKWW1PSG9rcDlobzNPcE81RGF3Z3dBbGMwdFpBMQ?oc=5",
-      "summary": "AI智能錄音品牌Plaud：金融教育界帶動本地用戶群增長近19倍 (17:28) - 20261027 - 即時財經新聞 明報財經網",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育",
-        "Google发现"
-      ],
-      "cardIntro": "这条新闻主要介绍：AI智能录音品牌Plaud：金融教育界帶動本地用戶群增長近19倍 (17:28) - 20261027 - 即時財經新聞 - 明报財經网 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
-      "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-5e6c114bedc2",
-      "title": "香港教師會李興貴中學 推動STEAM教育以人為本 - 星島頭條",
-      "source": "Google News",
-      "date": "2026-10-27",
-      "publishedDate": "2026-10-27",
-      "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxOSUxnV0k5TjgyMl9WRXlxR3lXX0ZnOEdPS3BNQ3RjMHJfTnpNc1ZFcU9xc3AwT3huSU4tcEtyeUVFWjVZRVczdFp1a19kdzJLNzdKWU1IQVZuRkFZcnJjeFpISURVeS1EVnY3azZnS3JFX2ZlZXFLMUZNb2VYbmxyRjRsaHQtZEVqOVQwNjgxZFNFVlYzZzBtb3JxRHFuRkItOWx1OHdwWnpRTTcwMHNsQ3ZTZ2thMG1KNmtleVFGNS1CWEw2eXlHQS1ZV21DOUtFY1Q1bVFKQ3VVbFNLVkFodjcyT2pJMllkN2RKUlFWekQxSElYTEI4Z1hxUnhiLVlUQklvOXlFSEtBMU1UbEhjVWUyUmhOSmJsazRaVnVoR0dIVFUwa0x6TGJNQm5KZE04dzNHbg?oc=5",
-      "summary": "香港教師會李興貴中學 推動STEAM教育以人為本 星島頭條",
-      "category": "每日新闻",
-      "tags": [
-        "AI教育",
-        "Google发现"
-      ],
-      "cardIntro": "这条新闻主要介绍：香港教师会李興貴中学 推動STEAM教育以人为本 - 星島頭条 它可用于了解香港 AI 教育、学校实践、教育科技应用或社会讨论的最新动态。阅读时可以重点留意涉及的学校/机构、教师或学生对象、AI 工具或政策背景，以及它对教师 AI 研究可能提供的场景线索。",
       "researchValue": "可作为香港 AI 教育发展、学校应用和教育科技趋势的新闻线索。",
       "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     }
@@ -3255,8 +3251,8 @@
       "id": "item-9994668568ee",
       "title": "LinkedIn 搜索入口：香港AI教育",
       "source": "LinkedIn 搜索入口",
-      "date": "2026-11-22",
-      "publishedDate": "2026-11-22",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
       "url": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts+%E9%A6%99%E6%B8%AF+AI+%E6%95%99%E8%82%B2+%E6%95%99%E5%B8%AB+%E5%9F%B9%E8%A8%93+OR+%E8%AC%9B%E5%BA%A7+OR+%E5%B7%A5%E4%BD%9C%E5%9D%8A",
       "summary": "打开 Google 搜索，查看 LinkedIn 上与 LinkedIn 搜索入口：香港AI教育 相关的公开线索。",
       "kind": "linkedin-shortcut",
@@ -3273,8 +3269,8 @@
       "id": "item-c6df6ace0ae0",
       "title": "LinkedIn 搜索入口：HK AIED",
       "source": "LinkedIn 搜索入口",
-      "date": "2026-11-22",
-      "publishedDate": "2026-11-22",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
       "url": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts+Hong+Kong+AI+education+teacher+training+workshop+seminar",
       "summary": "打开 Google 搜索，查看 LinkedIn 上与 LinkedIn 搜索入口：HK AIED 相关的公开线索。",
       "kind": "linkedin-shortcut",
@@ -3291,8 +3287,8 @@
       "id": "item-8ef90b80e79a",
       "title": "LinkedIn 搜索入口：EdTech HK",
       "source": "LinkedIn 搜索入口",
-      "date": "2026-11-22",
-      "publishedDate": "2026-11-22",
+      "date": "2026-11-23",
+      "publishedDate": "2026-11-23",
       "url": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts+Hong+Kong+EdTech+AI+learning+teaching",
       "summary": "打开 Google 搜索，查看 LinkedIn 上与 LinkedIn 搜索入口：EdTech HK 相关的公开线索。",
       "kind": "linkedin-shortcut",
@@ -3302,6 +3298,23 @@
         "LinkedIn"
       ],
       "cardIntro": "这条公开线索可能涉及：打开 Google 搜索，查看 LinkedIn 上与 LinkedIn 搜索入口：EdTech HK 相关的公开线索。 它通常来自 Google 或 LinkedIn 可公开发现的结果，适合用来补充正式新闻和机构网页之外的活动、人物、项目或机构线索。建议人工点开核对来源可靠性，再决定是否纳入研究记录。",
+      "researchValue": "这是补充发现线索，适合人工点开核对后再纳入正式资料库。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+    },
+    {
+      "id": "item-7c02b54abf51",
+      "title": "\"We want teachers to use AI\" is a wish, not a plan. The missing piece is usually data: who already uses it, who wants to, who's anxious — and nobody knows, because nobody asked. This free leadership demo makes asking take two minutes. Teachers rate a h - LinkedIn",
+      "source": "LinkedIn 公开线索 - 香港AI教育",
+      "date": "2026-11-17",
+      "publishedDate": "2026-11-17",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQjlsbWhvdXZmSFlaTmJHVFctMG1OcTJ4R0s2VHY3cDg3R3ZaRzdrR2N0VjlNS0RaYTRQZnVDTUFrVVVwUjVITXA2SlJSc3dXVUlPZUlUM3oydDBiRmozZnhjZW9wMklzUFRpY1BfcFMzUmRqUDVDNmxOM1lnU1ROQXJ0cWx0dlpnNVg0MmhiVHZ2LUpzWFR5VTluaDlmWE5iTEZRWlFOdjQyWVNPMFZ6dkxTNnJYcFNndm5lWnpn?oc=5",
+      "summary": "\"We want teachers to use AI\" is a wish, not a plan. The missing piece is usually data: who already uses it, wh...",
+      "category": "发现",
+      "tags": [
+        "AI教育",
+        "LinkedIn"
+      ],
+      "cardIntro": "这条公开线索可能涉及：\"We want teachers to use AI\" is a wish, not a plan. The missing piece is usually data: who already uses it, wh... 它通常来自 Google 或 LinkedIn 可公开发现的结果，适合用来补充正式新闻和机构网页之外的活动、人物、项目或机构线索。建议人工点开核对来源可靠性，再决定是否纳入研究记录。",
       "researchValue": "这是补充发现线索，适合人工点开核对后再纳入正式资料库。",
       "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     },
@@ -3319,6 +3332,23 @@
         "LinkedIn"
       ],
       "cardIntro": "这条公开线索可能涉及：Reflecting on AI in Early Childhood Education: Curriculum Leadership and Family Education 迎向 AI 新世代：幼稚園课程領导及家庭... 它通常来自 Google 或 LinkedIn 可公开发现的结果，适合用来补充正式新闻和机构网页之外的活动、人物、项目或机构线索。建议人工点开核对来源可靠性，再决定是否纳入研究记录。",
+      "researchValue": "这是补充发现线索，适合人工点开核对后再纳入正式资料库。",
+      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
+    },
+    {
+      "id": "item-68563322e627",
+      "title": "運動員的表現隨時都在被量度，即使是一般人，也被不同的「尺」量度，學生是成績，打工仔就是KPI。人類本身有不同面向，成績不理想的學生，也可以有其他長處。 香港前奧運泳手江忞懿 Yvette Kong, OLY 主攻蛙泳，13歲（2006年）時打破香港100米蛙泳紀錄，其後多次 - LinkedIn",
+      "source": "LinkedIn 公开线索 - 香港AI教育",
+      "date": "2026-11-11",
+      "publishedDate": "2026-11-11",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQUllUbEdDYWdZY1BxSkV2bzE1Q1BrY2pUNTBzbVk0SXpyTW9ESTVvZmpLV2c0em1TbWJ6dERndjl3YkVoaEowY0R1eDlmZHBtMFJYWXVPVjBPcl9MOHFGZEJadEhjU1lmM3JtcUtNMXNYM0VOSDYwNjZLNGROQmZlcnc5VUVtRGRLQVBNRU1yZnpvcW82Q3dyN0Izb3JNaGhJZmgyWFc2X25IRU9sOG8zZjJwUWhwUUg4clhQc0c5Ykc5bFl6VHJLSWdDbDNfT0NBaUtB?oc=5",
+      "summary": "運動員的表現隨時都在被量度，即使是一般人，也被不同的「尺」量度，學生是成績，打工仔就是KPI。人類本身有不同面向，成績不理想的學生，也可以有其他長處。 香港前奧運泳手江忞懿 Yvette Kong, OLY 主攻蛙泳，1...",
+      "category": "发现",
+      "tags": [
+        "AI教育",
+        "LinkedIn"
+      ],
+      "cardIntro": "这条公开线索可能涉及：運動員的表现隨時都在被量度，即使是一般人，也被不同的「尺」量度，学生是成績，打工仔就是KPI。人类本身有不同面向，成績不理想的学生，也可以有其他長处。 香港前奧運泳手江忞懿 Yvette Kong, OLY 主攻蛙泳，1... 它通常来自 Google 或 LinkedIn 可公开发现的结果，适合用来补充正式新闻和机构网页之外的活动、人物、项目或机构线索。建议人工点开核对来源可靠性，再决定是否纳入研究记录。",
       "researchValue": "这是补充发现线索，适合人工点开核对后再纳入正式资料库。",
       "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     },
@@ -4251,40 +4281,6 @@
         "LinkedIn"
       ],
       "cardIntro": "这条公开线索可能涉及：𝗧𝗵𝗲 𝗘𝗗𝗕 × 𝗖𝘆𝗯𝗲𝗿𝗽𝗼𝗿𝘁: 𝗜&𝗧 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗣𝗮𝗿𝘁𝗻𝗲𝗿𝘀𝗵𝗶𝗽 𝗦𝗰𝗵𝗲𝗺𝗲 (𝟮𝟬𝟮𝟱/𝟮𝟲) – 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗦𝗵𝗼𝘄𝗰𝗮𝘀𝗲 & 𝗧𝗲𝗮𝗰𝗵𝗶𝗻𝗴 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗲... 它通常来自 Google 或 LinkedIn 可公开发现的结果，适合用来补充正式新闻和机构网页之外的活动、人物、项目或机构线索。建议人工点开核对来源可靠性，再决定是否纳入研究记录。",
-      "researchValue": "这是补充发现线索，适合人工点开核对后再纳入正式资料库。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-f6af5620aae5",
-      "title": "【Shaping an Inclusive Future: HKBU's Policy Proposal for Hong Kong】 Hong Kong’s first Five-Year Plan marks a significant milestone for our city's future social development. As people with disabilities (PWDs) are an integral part of our society, their actual nee - LinkedIn",
-      "source": "LinkedIn 公开线索 - 香港AI教育",
-      "date": "2026-08-20",
-      "publishedDate": "2026-08-20",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeFBMTkhiRTJueUNmN3NUM0YtTFliNl8ycWlxOFpNMEVUVjhpUEpfaUo0TDNtX0t0MWlUbkhoNURWanZLZ1VRYnJGUVBwNEV0MkUxa2NjZllxV05kTFBCRFpiZWRvSDZYTlRjRzFNekQzNi1oaDdpbEZMbkplN0tHTTczbWM1VE5QbUlsUlhKb1lDZ3NuZ0lGU25OVUZKc0FqZm83ZmljVVFUSWJNdjRqRjJwSlMwWEw4MFIybDJZakRTWWtzVy00?oc=5",
-      "summary": "【Shaping an Inclusive Future: HKBU's Policy Proposal for Hong Kong】 Hong Kong’s first Five-Year Plan marks a s...",
-      "category": "发现",
-      "tags": [
-        "AI教育",
-        "LinkedIn"
-      ],
-      "cardIntro": "这条公开线索可能涉及：【Shaping an Inclusive Future: HKBU's Policy Proposal for Hong Kong】 Hong Kong’s first Five-Year Plan marks a s... 它通常来自 Google 或 LinkedIn 可公开发现的结果，适合用来补充正式新闻和机构网页之外的活动、人物、项目或机构线索。建议人工点开核对来源可靠性，再决定是否纳入研究记录。",
-      "researchValue": "这是补充发现线索，适合人工点开核对后再纳入正式资料库。",
-      "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
-    },
-    {
-      "id": "item-a78bf6a4cff0",
-      "title": "It was an honour to attend the award ceremony of the \"The 5th Greater Bay Area & 2nd National Joint School Practifly AI Mathematical Thinking Elite Challenge 2026\" at The Hang Seng University of Hong Kong (HSUHK) yesterday as a guest of honour and me - LinkedIn",
-      "source": "LinkedIn 公开线索 - EdTech HK",
-      "date": "2026-08-19",
-      "publishedDate": "2026-08-19",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbFpEal9MM0M4bTFhQmQ0QzFVUGZFakdXc0xBQV91Rnlza2YycVJlSVoyVTJCWWhLcHItR2doTUZydm5GNmp6c3ZrQl9RdE9ObDlYcDNlQTM3bzVNamEyUHEwWUZLNUsxNFNPV1BhVlM5dno0ZXhkdEJiWld2WTYyUWF6dHpTYVB4TnJjOUR1SUNHalBaMW5fejNuamVaOXBZTmY2Y0FWWi13ZHdka3RXaEdacDRmQ2d4eGZFejgwdXQ2QQ?oc=5",
-      "summary": "It was an honour to attend the award ceremony of the \"The 5th Greater Bay Area & 2nd National Joint School Pra...",
-      "category": "发现",
-      "tags": [
-        "AI教育",
-        "LinkedIn"
-      ],
-      "cardIntro": "这条公开线索可能涉及：It was an honour to attend the award ceremony of the \"The 5th Greater Bay Area & 2nd National Joint School Pra... 它通常来自 Google 或 LinkedIn 可公开发现的结果，适合用来补充正式新闻和机构网页之外的活动、人物、项目或机构线索。建议人工点开核对来源可靠性，再决定是否纳入研究记录。",
       "researchValue": "这是补充发现线索，适合人工点开核对后再纳入正式资料库。",
       "teacherResearchUse": "适合观察教师 AI 使用环境、学校案例和社会讨论如何变化。"
     }
